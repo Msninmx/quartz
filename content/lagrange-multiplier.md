@@ -32,6 +32,7 @@ $$
 \begin{align}
 	\mathcal{L}_x&=2x-\lambda=0 \\
 	\mathcal{L}_y&=2y+\lambda=0 \\
+	\mathcal{L}_z&=2z-2\lambda=0 \\
 \end{align}
 $$
 
