@@ -27,21 +27,10 @@ $$
 
 With this new function $\mathcal{L}$, we now find the partial derivatives for each variable and equalize them to $1$.
 
-$$
-\begin{align}
-	\mathcal{L}(x,y,z,\lambda)&=f(x,y,z)-\lambda g(x,y,z) \\
-	\mathcal{L}(x,y,z,\lambda)&=(x^2+y^2+z^2)-\lambda(x-y+2z-6) \\
-	\mathcal{L}(x,y,z,\lambda)&=x^2+y^2+z^2-\lambda x+\lambda y-2\lambda z+6 \lambda
-\end{align}
-$$
-
 
 $$
 \begin{align}
 	\mathcal{L}_x&=2x-\lambda=0 \\
-	\mathcal{L}_y&=2y+\lambda=0 \\
-	\mathcal{L}_z&=2z-2\lambda=0 \\
-	\mathcal{L}_\lambda &=-x+y-2z+6=0 \\
 \end{align}
 $$
 
