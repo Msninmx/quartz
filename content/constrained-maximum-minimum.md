@@ -34,10 +34,10 @@ $$
 $$
 $$
 \begin{align}
-\begin{rcases}
+\begin{cases}
 	4y-4z+12=0 \\
 	-4y+10z-24=0 
-\end{rcases} &&
+\end{cases} &&
 y=-1 \quad z=2
 \end{align}
 $$
@@ -50,7 +50,7 @@ $$
 \begin{align}
 	\frac{\partial^2w}{\partial y^2}&=4\\
 	\frac{\partial^2w}{\partial z^2}&=10\\
-	\frac{\partial^2w}{\partial z \partial y}&=-4\\\\
+	\frac{\partial^2w}{\partial z \partial y}&=-4\\
 	D=4(10)&-(-4)^2=24
 \end{align}
 $$
