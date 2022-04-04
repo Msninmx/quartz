@@ -17,6 +17,14 @@ Given a function $w=x^2+y^2+z^2$, we have the constraint $2z+x-y=6$. Find the cr
 
 We'll rewrite the functions as a Lagrangian function.
 
+$$
+\begin{align}
+	\mathcal{L}(x,y,z,\lambda)&=f(x,y,z)-\lambda g(x,y,z) \\
+	\mathcal{L}(x,y,z,\lambda)&=(x^2+y^2+z^2)-\lambda(x-y+2z-6) \\
+	\mathcal{L}(x,y,z,\lambda)&=x^2+y^2+z^2-\lambda x+\lambda y-2\lambda z+6 \lambda
+\end{align}
+$$
+
 With this new function $\mathcal{L}$, we now find the partial derivatives for each variable and equalize them to $0$.
 
 $$
