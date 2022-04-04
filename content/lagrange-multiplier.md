@@ -27,14 +27,14 @@ $$
 
 With this new function $\mathcal{L}$, we now find the partial derivatives for each variable and equalize them to $0$.
 
-$$
-\begin{align}
+
+$$\begin{align}
 	\mathcal{L}_x&=2x-\lambda=0 \\
 	\mathcal{L}_y&=2y+\lambda=0 \\
 	\mathcal{L}_z&=2z-2\lambda=0 \\
 	\mathcal{L}_\lambda &=-x+y-2z+6=0 \\
-\end{align}
-$$
+\end{align}$$
+
 
 This gives us a system of equations, and we can solve for $x,y,z$, giving us the coordinates for our critical point.
 $$
