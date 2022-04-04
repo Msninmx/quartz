@@ -11,7 +11,7 @@
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
-<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.2f567aaecb0dc98c874a9eb093337a94.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.0544d486bbcb46be885cd4b4dddf8cb9.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.2f567aaecb0dc98c874a9eb093337a94.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.8de231c76c3f066835df5f341a230e5c.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
@@ -77,9 +77,16 @@ Where $f(x)$ is the original function and $g(x)$ is the constraint. This can be 
 \mathcal{L}(x,y,z,\lambda)&=f(x,y,z)-\lambda g(x,y,z) \\\mathcal{L}(x,y,z,\lambda)&=(x^2+y^2+z^2)-\lambda(x-y+2z-6) \\\mathcal{L}(x,y,z,\lambda)&=x^2+y^2+z^2-\lambda x+\lambda y-2\lambda z+6 \lambda
 \end{align}
 $$</p>
-<p>With this new function $\mathcal{L}$, we now find the partial derivatives for each variable and equalize them to $0$.</p>
-<p>$$\begin{align}
-\mathcal{L}_x&=2x-\lambda=0 \\\mathcal{L}_y&=2y+\lambda=0 \\\mathcal{L}<em>z&=2z-2\lambda=0 \\\mathcal{L}</em>\lambda &=-x+y-2z+6=0 \\\end{align}$$</p>
+<p>With this new function $\mathcal{L}$, we now find the partial derivatives for each variable and equalize them to $1$.</p>
+<p>$$
+\begin{align}
+\mathcal{L}(x,y,z,\lambda)&=f(x,y,z)-\lambda g(x,y,z) \\\mathcal{L}(x,y,z,\lambda)&=(x^2+y^2+z^2)-\lambda(x-y+2z-6) \\\mathcal{L}(x,y,z,\lambda)&=x^2+y^2+z^2-\lambda x+\lambda y-2\lambda z+6 \lambda
+\end{align}
+$$</p>
+<p>$$
+\begin{align}
+\mathcal{L}_x&=2x-\lambda=0 \\\mathcal{L}_y&=2y+\lambda=0 \\\mathcal{L}<em>z&=2z-2\lambda=0 \\\mathcal{L}</em>\lambda &=-x+y-2z+6=0 \\\end{align}
+$$</p>
 <p>This gives us a system of equations, and we can solve for $x,y,z$, giving us the coordinates for our critical point.
 $$
 \begin{align}
