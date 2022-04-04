@@ -31,6 +31,7 @@ With this new function $\mathcal{L}$, we now find the partial derivatives for ea
 $$
 \begin{align}
 	\mathcal{L}_x&=2x-\lambda=0 \\
+	\mathcal{L}_y&=2y+\lambda=0 \\
 \end{align}
 $$
 
