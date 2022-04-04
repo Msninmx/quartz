@@ -3,7 +3,7 @@
 <meta name=generator content="Hugo 0.92.2">
 <meta charset=utf-8>
 <meta name=description content="Host your second brain and digital garden for free. Quartz features extremely fast full-text search, Wikilink support, backlinks, local graph, tags, and link previews.">
-<title>🪴 Quartz 3.2</title>
+<title>Online Zettlekasten</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://quartz.jzhao.xyz//icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
@@ -13,7 +13,7 @@
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
-<script>const BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.03d0265dd1ca84fe383a8ad442b7c660.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.bfaea44cdb3b4e0e4406132aa02e5ff3.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.2f567aaecb0dc98c874a9eb093337a94.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.7486358b44ec3e1f7ce2060560ecb7b5.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
@@ -29,7 +29,7 @@
 <script defer src=https://quartz.jzhao.xyz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
 <div class=singlePage>
 <header>
-<h1>🪴 Quartz 3.2</h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<h1>Online Zettlekasten</h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
 <div class=spacer></div>
 <div class=darkmode>
 <input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
@@ -44,51 +44,34 @@
 <h3>Table of Contents</h3>
 <nav id=TableOfContents>
 <ol>
-<li><a href=#get-started>Get Started</a></li>
-<li><a href=#content-lists>Content Lists</a></li>
-<li><a href=#troubleshooting>Troubleshooting</a></li>
+<li><a href=#welcome>Welcome</a>
+<ol>
+<li><a href=#how-to-use-this-site>How to use this site</a></li>
+<li><a href=#entry-points>Entry Points</a></li>
+</ol>
+</li>
 </ol>
 </nav>
 </aside>
-<p>Host your second brain and
-<a href=https://jzhao.xyz/posts/networked-thought rel=noopener>digital garden</a> for free. Quartz features</p>
+<h2 id=welcome>Welcome</h2>
+<p>This site hosts the notes taken over the course of my university career in Mathematics and Data Science.</p>
+<h3 id=how-to-use-this-site>How to use this site</h3>
 <ol>
-<li>Extremely fast full-text search by pressing <code>Ctrl</code> + <code>k</code></li>
-<li>Customizable and hackable design based on Hugo</li>
-<li>Automatically generated backlinks, link previews, and local graph</li>
-<li>Built-in <a href=/notes/CJK-+-Latex-Support-%E6%B5%8B%E8%AF%95 rel=noopener class=internal-link data-src=/notes/CJK-+-Latex-Support-%E6%B5%8B%E8%AF%95> CJK + Latex Support</a></li>
-<li>Support for both Markdown Links and Wikilinks</li>
+<li>Each topic is on its own page.</li>
+<li>Search for text with <code>/</code>.</li>
+<li>Pages linking to current page can be found under <strong>Backlinks</strong>.</li>
 </ol>
-<h2 id=get-started>Get Started</h2>
-<blockquote>
-<p>📚
-<a href=/notes/setup rel=noopener class=internal-link data-src=/notes/setup>Setup your own digital garden using Quartz
-</a></p>
-</blockquote>
-<p>Not convinced yet? Look at some
-<a href=/notes/showcase rel=noopener class=internal-link data-src=/notes/showcase>community digital gardens
-</a> built with Quartz, or read about
-<a href=/notes/philosophy rel=noopener class=internal-link data-src=/notes/philosophy>why I made Quartz
-</a> to begin with.</p>
-<h2 id=content-lists>Content Lists</h2>
-<p>If you prefer browsing the contents of this site through a list instead of a graph, you can find content lists here too:</p>
+<h3 id=entry-points>Entry Points</h3>
 <ul>
 <li>
-<a href=/notes rel=noopener class=internal-link data-src=/notes>All Notes
+<a href=/logic rel=noopener class=internal-link data-src=/logic>Logic
 </a></li>
 <li>
-<a href=/tags/setup rel=noopener class=internal-link data-src=/tags/setup>Setup-related Notes
+<a href=/partial-derivatives rel=noopener class=internal-link data-src=/partial-derivatives>Multivariable Calculus
 </a></li>
-</ul>
-<h2 id=troubleshooting>Troubleshooting</h2>
-<ul>
-<li>🚧
-<a href=/notes/troubleshooting rel=noopener class=internal-link data-src=/notes/troubleshooting>Troubleshooting and FAQ
+<li>
+<a href=/R-programming-language rel=noopener class=internal-link data-src=/R-programming-language>R
 </a></li>
-<li>🐛
-<a href=https://github.com/jackyzha0/quartz/issues rel=noopener>Submit an Issue</a></li>
-<li>👀
-<a href=https://discord.gg/cRFFHYye7t rel=noopener>Discord Community</a></li>
 </ul>
 </article>
 <hr>
