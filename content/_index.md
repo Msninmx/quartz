@@ -1,5 +1,5 @@
 ---
-title: Online Zettlekasten
+title: Digital Brain
 disableToc: true
 ---
 
