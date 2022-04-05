@@ -17,4 +17,4 @@ This site hosts the notes taken over the course of my university career in Mathe
 - [R](R-programming-language.md)
 
 ### All Notes
-> [All Notes](/content)
+> [All Notes](/)
