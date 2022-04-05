@@ -1,6 +1,8 @@
-### Canonical Base
+---
 title: Canonical Base
 disableToc: true
+---
+### Canonical Base
 
 Canonical base in $\mathbb{R}^2$:
 $$

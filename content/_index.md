@@ -14,7 +14,7 @@ This site hosts the notes taken over the course of my university career in Mathe
 ### Entry Points
 - [Logic](/notes/logic.md)
 - [Multivariable Calculus](/notes/partial-derivatives.md)
-- [R](R-programming-language.md)
+- [R](/notes/R-programming-language.md)
 
 ### All Notes
 > [All Notes](/notes)
