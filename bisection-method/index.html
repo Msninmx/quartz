@@ -1,8 +1,9 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Matrix Matrices are rectangular arrangements of numbers. $$ A = \begin{bmatrix} a_{11} & a_{21} & \cdots & a_{1n} \ a_{21} & a_{31} & \cdots & a_{2n} \ \vdots & \vdots & \ddots & \vdots \ a_{m1} & a_{m2} & \cdots & a_{mn} \ \end{bmatrix} $$ The matrix $A$ is $m \times n$ big.">
-<title>Matrix</title>
+<meta name=description content="Bisection Method This method looks to find the roots of a nonlinear equation.
+ First we find the range $[a,b]$ over which we want to check for roots.">
+<title>Bisection Method</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://msninmx.github.io/quartz//icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
@@ -38,7 +39,7 @@
 </div>
 </header>
 <article>
-<h1>Matrix</h1>
+<h1>Bisection Method</h1>
 <p class=meta>
 Last updated April 5, 2022
 </p>
@@ -50,21 +51,32 @@ Last updated April 5, 2022
 <ol>
 <li>
 <ol>
-<li><a href=#matrix>Matrix</a></li>
+<li><a href=#bisection-method>Bisection Method</a></li>
 </ol>
 </li>
 </ol>
 </nav>
 </aside>
-<h3 id=matrix>Matrix</h3>
-<p>Matrices are rectangular arrangements of numbers.
+<h3 id=bisection-method>Bisection Method</h3>
+<p>This method looks to find the roots of a nonlinear equation.</p>
+<ol>
+<li>First we find the range $[a,b]$ over which we want to check for roots.</li>
+<li>We find the midpoint $m=\frac{a+b}{2}$ and evaluate $f(m)$.</li>
+<li>If $f(m)=0$, then $m$ is our root.</li>
+<li>If $f(a)$ and $f(m)$ have different signs, then the root is in the interval $[a,m]$.</li>
+<li>If $f(b)$ and $f(m)$ have different signs, then the root is in the interval $[m,b]$.</li>
+<li>We then divide this new interval in half and repeat the process.</li>
+</ol>
+<p>This gives us an approximation for the root.</p>
+<p>To find the accuracy of our approximation:
 $$
-A =
-\begin{bmatrix}
-a_{11} & a_{21} & \cdots & a_{1n} \\a_{21} & a_{31} & \cdots & a_{2n} \\\vdots & \vdots & \ddots & \vdots \\a_{m1} & a_{m2} & \cdots & a_{mn} \\\end{bmatrix}
+\text{Error}=\frac{i_{current}-i_{previous}}{i_{current}}\times100
 $$
-The matrix $A$ is $m \times n$ big.</p>
-<p>#math #linearAlgebra #matrices</p>
+Where $i$ is the value of the iteration. An acceptable error is around $1\times10^{-3}$</p>
+<p>This method is useful for algebraic and transcendental equations, but is best used after a graphical analysis.</p>
+<h4 id=intermediate-value-theorem>Intermediate Value Theorem</h4>
+<p>If $f(x)$ is constant over the range $[a,b]$, with $f(a)\cdot f(b)&lt;0$, then there exists some value $c \in[a,b]$ where $f(c)=0$.</p>
+<p>#math</p>
 </article>
 <hr>
 <div class=page-end>
@@ -72,28 +84,7 @@ The matrix $A$ is $m \times n$ big.</p>
 <h3>Backlinks</h3>
 <ul class=backlinks>
 <li>
-<a href=/quartz/R-programming-language>R Programming Language</a>
-</li>
-<li>
-<a href=/quartz/identity-matrix>Identity Matrix</a>
-</li>
-<li>
-<a href=/quartz/linear-transformations>Linear Transformations</a>
-</li>
-<li>
-<a href=/quartz/matrix-addition>Matrix Addition</a>
-</li>
-<li>
-<a href=/quartz/matrix-of-a-system>Matrix of a System</a>
-</li>
-<li>
-<a href=/quartz/rotation-matrix>Rotation Matrix</a>
-</li>
-<li>
-<a href=/quartz/vector>Vector</a>
-</li>
-<li>
-<a href=/quartz/zero-matrix>Zero Matrix</a>
+No backlinks found
 </li>
 </ul>
 </div>
@@ -103,7 +94,7 @@ The matrix $A$ is $m \times n$ big.</p>
 <div id=graph-container></div>
 <style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
 <script src=https://msninmx.github.io/quartz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
-<script>drawGraph("https://msninmx.github.io/quartz/matrix","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+<script>drawGraph("https://msninmx.github.io/quartz/bisection-method","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
 </div>
 </div>
 <div id=contact_buttons>
