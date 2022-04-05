@@ -16,3 +16,5 @@ This site hosts the notes taken over the course of my university career in Mathe
 - [Multivariable Calculus](partial-derivatives.md)
 - [R](R-programming-language.md)
 
+### All Notes
+> [All Notes](/content)
