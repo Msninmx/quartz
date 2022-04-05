@@ -1,7 +1,7 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Directional Derivative  Partial derivatives  show us rates of change in $x$ and $y$ for a given function $f(x, y)$.">
+<meta name=description content="Directional Derivative [[notes/partial-derivatives|Partial derivatives]] show us rates of change in $x$ and $y$ for a given function $f(x, y)$. Now we&rsquo;ll see rates of change on $f(x, y)$ in other directions, given by a vector $\vec{u}$.">
 <title>Directional Derivative</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://msninmx.github.io/quartz//icon.png>
@@ -11,7 +11,7 @@
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
-<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.f029a0aed4ee3b2dc7d9280e5c181604.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.3370db8ee3c1cf7e6362d83931f3aec0.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.98761af9eab19bbe4a1871495bc20fd3.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.d205f411e4236c9da5a204aa7dd17c8a.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
@@ -57,17 +57,13 @@ Last updated April 5, 2022
 </nav>
 </aside>
 <h3 id=directional-derivative>Directional Derivative</h3>
-<p>
-<a href=/quartz/notes/partial-derivatives rel=noopener class=internal-link data-src=/quartz/notes/partial-derivatives>Partial derivatives
-</a> show us rates of change in $x$ and $y$ for a given function $f(x, y)$. Now we&rsquo;ll see rates of change on $f(x, y)$ in other directions, given by a vector $\vec{u}$.</p>
+<p><a href=/quartz/notes/partial-derivatives rel=noopener class=internal-link data-src=/quartz/notes/partial-derivatives>Partial derivatives</a> show us rates of change in $x$ and $y$ for a given function $f(x, y)$. Now we&rsquo;ll see rates of change on $f(x, y)$ in other directions, given by a vector $\vec{u}$.</p>
 <p>There exists an infinite number of directions from where we can take the derivative. The point from where we take the derivative is $(x_0, y_0)$ and the distance is $\vec{u}$.</p>
 <p>Directional derivatives in $\mathbb{R}^2$ have the form:
 $$
 D_uf(x_0,y_0)
 $$
-The unit
-<a href=/quartz/notes/vector rel=noopener class=internal-link data-src=/quartz/notes/vector>vector
-</a> $\vec{u}$ shows the direction in which we create another axis $r$, giving us:
+The unit <a href=/quartz/notes/vector rel=noopener class=internal-link data-src=/quartz/notes/vector>notes/vector</a> $\vec{u}$ shows the direction in which we create another axis $r$, giving us:
 $$
 D_\vec{u}f(x_0,y_0) = \frac{dz}{dr}
 $$
@@ -85,9 +81,7 @@ We can substitute trigonometric functions to only need the angle of rotation:
 $$
 D_\vec{u}f(x_0,y_0) = f_x(x_0,y_0)\cos(\theta)+f_y(x_0,y_0)\sin(\theta)
 $$
-This process can be simplified even more finding the
-<a href=/quartz/notes/gradient-vector rel=noopener class=internal-link data-src=/quartz/notes/gradient-vector>gradient vector
-</a> of our function.
+This process can be simplified even more finding the <a href=/quartz/notes/gradient-vector rel=noopener class=internal-link data-src=/quartz/notes/gradient-vector>gradient vector</a> of our function.
 $$
 D_\vec{u}f(x,y) = \langle f_x(x,y),f_y(x,y)\rangle \cdot \langle u_1, u_2 \rangle
 $$
@@ -100,7 +94,13 @@ Dot product multiplies each element of one matrix with the corresponding element
 <h3>Backlinks</h3>
 <ul class=backlinks>
 <li>
-No backlinks found
+<a href=/quartz/notes/directional-derivatives-in-R3>Directional Derivatives in $\mathbb{R}^3$</a>
+</li>
+<li>
+<a href=/quartz/notes/gradient-vector>Gradient Vector</a>
+</li>
+<li>
+<a href=/quartz/notes/maximum-minimum>Maximums and Minimums</a>
 </li>
 </ul>
 </div>

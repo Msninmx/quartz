@@ -11,7 +11,7 @@
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
-<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.f029a0aed4ee3b2dc7d9280e5c181604.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.3370db8ee3c1cf7e6362d83931f3aec0.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.98761af9eab19bbe4a1871495bc20fd3.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.d205f411e4236c9da5a204aa7dd17c8a.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
@@ -61,9 +61,7 @@ Last updated April 5, 2022
 $$
 \nabla f(x_0,y_0)=\lambda \cdot \nabla g(x_0,y_0)
 $$</p>
-<p>where $\nabla$ is the
-<a href=/quartz/notes/gradient-vector rel=noopener class=internal-link data-src=/quartz/notes/gradient-vector>gradient vector
-</a> of the function.</p>
+<p>where $\nabla$ is the <a href=/quartz/notes/gradient-vector rel=noopener class=internal-link data-src=/quartz/notes/gradient-vector>gradient vector</a> of the function.</p>
 <h5 id=example>Example</h5>
 <p>At what point in the circle $x^2+y^2=1$ is the product $xy$ largest?</p>
 <p>For this problem, we want to maximize the function $f(x,y)=xy$ given the constraint $g(x,y)=x^2+y^2-1=0$.</p>
