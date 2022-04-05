@@ -1,9 +1,9 @@
 ---
-title: Order of [Logical Operations](compound-propositions.md)
+title: Order of [[notes/compound-propositions|Logical Operations]]
 disableToc: true
 ---
 
-### Order of [Logical Operations](compound-propositions.md)
+### Order of [[notes/compound-propositions|Logical Operations]]
 1. Negation
 2. Conjunction
 3. Disjunction

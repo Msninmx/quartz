@@ -18,7 +18,7 @@ Programming language used for the analysis and visualization of data.
 | Null      | null    |
 
 #### Vectors
-To create a [vector](vector.md):
+To create a [[notes/vector]]:
 `myVector = c(1,2,3,4)`
 Vectors are created with the `c()` function, and can only contain a single data type. Vectors work similarly to dictionaries in python.
 
@@ -33,7 +33,7 @@ myVector
 Vectors start at $1$.
 
 #### Matrices
-[Multidimensional](matrix.md) vector. Can also only contain single data types.
+[[notes/matrix|Multidimensional]] vector. Can also only contain single data types.
 `myMatrix = matrix(1:12, nrow=3, ncol=4)`
 This creates a $3\times4$ matrix with values from $1$ to $12$. 
 

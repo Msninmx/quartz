@@ -4,7 +4,7 @@ disableToc: true
 ---
 
 ### Asymmetric Relations
-A [relation](relations.md) $R$ is _asymmetric_ if each pair of different elements does **not** have its inverse in the relation.
+A [[notes/relations|relation]] $R$ is _asymmetric_ if each pair of different elements does **not** have its inverse in the relation.
 $$
 xRy \land yRx
 $$

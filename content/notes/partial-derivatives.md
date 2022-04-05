@@ -4,7 +4,7 @@ disableToc: true
 ---
 
 ### Partial Derivatives
-[Multivariable functions](multivariable-functions.md) require multivariable derivatives; for each variable in the function, a separate derivative is required.
+[[notes/multivariable-functions|Multivariable functions]] require multivariable derivatives; for each variable in the function, a separate derivative is required.
 
 #### How to derive
 1. Function $z=f(x,y)$

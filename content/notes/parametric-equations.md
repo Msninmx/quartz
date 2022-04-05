@@ -6,7 +6,7 @@ disableToc: true
 ### Parametric Equations
 Physical phenomena, like the movement of a particle, can be described using a coordinate system $x,y,z$, and with a fourth parameter __time__.
 
-A parametric equation are equations that allow us to represent a surface or [curve](parametric-curves.md) as the function of a parameter.
+A parametric equation are equations that allow us to represent a surface or [[notes/parametric-curves|curve]] as the function of a parameter.
 
 #### Formal Definition
 If $f$ and $g$ are continuous functions defined over an interval $I$, then $x=f(t)$ and $y=g(t)$ are parametric equations with respect to the variable $t$.
@@ -20,7 +20,7 @@ $$
 \end{align}
 $$
 in the interval $-1\leq t \leq 2$
-![WhatsApp Image 2022-03-30 at 7.27.25 AM](Files/WhatsApp%20Image%202022-03-30%20at%207.27.25%20AM.jpeg)
+![[Files/WhatsApp Image 2022-03-30 at 7.27.25 AM.jpeg]]
 
 #### Derivation
 Parametric equations can be derived just like normal functions.

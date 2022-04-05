@@ -4,7 +4,7 @@ disableToc: true
 ---
 
 ### Subsets
-When dealing with [sets](set-theory.md), we can say that certain sets are _subsets_ of other sets.
+When dealing with [[notes/set-theory|sets]], we can say that certain sets are _subsets_ of other sets.
 
 $A$ is a subset of $B$ if and only if every element in $A$ is also an element of $B$.
 $$A \subseteq B$$
@@ -15,7 +15,7 @@ $$B \supseteq A$$
 If $B$ has more elements than $A$, $A$ is a proper subset of $B$.
 $$A \subset B$$
 
-The [null set](null-set.md) is a subset of every other set.
+The [[notes/null-set|null set]] is a subset of every other set.
 $$\emptyset \subseteq A$$
 
 Every set $A$ is a subset of itself.

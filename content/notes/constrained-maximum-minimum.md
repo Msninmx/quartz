@@ -4,7 +4,7 @@ disableToc: true
 ---
 
 ### Maximum and Minimum with Constraints
-When solving problems involving [minimums and maximums](maximum-minimum.md), one can apply a constraint to the function.
+When solving problems involving [[notes/maximum-minimum|minimums and maximums]], one can apply a constraint to the function.
 
 ##### Example
 Given a function $w=x^2+y^2+z^2$, we have the constraint $2z+x-y=6$. Find the critical points of the original function and whether they're maximums, minimums, or saddle points.

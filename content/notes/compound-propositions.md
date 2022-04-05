@@ -4,6 +4,6 @@ disableToc: true
 ---
 
 ### Compound Propositions
-[Propositions](propositions.md) formed by 2 or more simple propositions, connected with [logical connectors](logical-connectors.md), e.g, and, or, if.
+[[notes/propositions|Propositions]] formed by 2 or more simple propositions, connected with [[notes/logical-connectors|logical connectors]], e.g, and, or, if.
 
 #logic 

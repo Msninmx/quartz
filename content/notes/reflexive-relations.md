@@ -4,7 +4,7 @@ disableToc: true
 ---
 
 ### Reflexive Relations
-A [relation](relations.md) $R$ is _reflexive_ if each element in the single set that created the relation is paired with each itself.
+A [[notes/relations|relation]] $R$ is _reflexive_ if each element in the single set that created the relation is paired with each itself.
 $$
 \forall x \in A, xRx
 $$

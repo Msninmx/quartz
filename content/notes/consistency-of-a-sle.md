@@ -4,6 +4,6 @@ disableToc: true
 ---
 
 ### Consistency of a SLE
-A [system](linear-equation-systems.md) is consider consistent if it has a [solution](sle-solution.md), if not, it's considered inconsistent.
+A [[notes/linear-equation-systems|system]] is consider consistent if it has a [[notes/sle-solution|solution]], if not, it's considered inconsistent.
 
 #logic #linearAlgebra 

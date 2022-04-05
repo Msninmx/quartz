@@ -11,6 +11,6 @@ $$
 \end{rcases} =
 \text{DeMorgan's Law}
 $$
-[Union](set-union.md) $\cup$ is can be considered as addition $+$, and [intersection](set-intersection.md) $\cap$ is multiplication $\times$.
+[[notes/set-union|Union]] $\cup$ is can be considered as addition $+$, and [[notes/set-intersection|intersection]] $\cap$ is multiplication $\times$.
 
 #logic 

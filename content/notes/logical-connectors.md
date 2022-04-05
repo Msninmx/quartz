@@ -4,7 +4,7 @@ disableToc: true
 ---
 
 ### Logical Connectors
-Words or symbols that help connect [propositions](propositions.md), [sets](set-theory.md), etc.
+Words or symbols that help connect [[notes/propositions]], [[notes/set-theory|sets]], etc.
 
 | Symbol            | Connector      | Name                  |
 | ----------------- | -------------- | --------------------- |

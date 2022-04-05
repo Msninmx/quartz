@@ -4,7 +4,7 @@ disableToc: true
 ---
 
 ### Partial Derivatives in Higher Orders
-One can derive [partial derivatives](partial-derivatives.md) several times, either with respect with one variable or the other.
+One can derive [[notes/partial-derivatives|partial derivatives]] several times, either with respect with one variable or the other.
 $$
 \begin{align}
 	f&(x,y) \\

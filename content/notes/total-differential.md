@@ -4,9 +4,9 @@ disableToc: true
 ---
 
 ### Total Differential
-Let $z=f(x,y)$ be a [multivariable function](multivariable-functions.md) and $dx$ and $dy$ infinitely small changes in $x$ and $y$ respectively. How do we determine the total change in $z$?
+Let $z=f(x,y)$ be a [[notes/multivariable-functions|multivariable function]] and $dx$ and $dy$ infinitely small changes in $x$ and $y$ respectively. How do we determine the total change in $z$?
 
-Our total differential of our function $z$ is equal to the sum of the [partial differentials](partial-derivatives.md) in $x$ and $y$.
+Our total differential of our function $z$ is equal to the sum of the [[notes/partial-derivatives|partial differentials]] in $x$ and $y$.
 
 The differential in $z$ is defined as:
 $$

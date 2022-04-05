@@ -4,7 +4,7 @@ disableToc: true
 ---
 
 ### Matrix of a System
-Find the [matrix](matrix.md) of the [system](linear-equation-systems.md):
+Find the [[notes/matrix]] of the [[notes/linear-equation-systems|system]]:
 $$
 \begin{align}
 	E_1:& 2x_1+3x_2-6x_3=9 \\

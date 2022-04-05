@@ -8,7 +8,7 @@ These points can be categorized as local or absolute. A local point is the highe
 
 There are also other critical points that aren't maximums or minimums, called saddle points.
 
-To find the maximum and minimum of a [multivariable function](multivariable-functions.md), first we find the points where the [partial derivatives](partial-derivatives.md) are equal to $0$.
+To find the maximum and minimum of a [[notes/multivariable-functions|multivariable function]], first we find the points where the [[notes/partial-derivatives|partial derivatives]] are equal to $0$.
 
 $$
 \begin{align}
@@ -18,7 +18,7 @@ $$
 \end{align}
 $$
 
-[Remembering that](directional-derivative.md):
+[[notes/directional-derivative|Remembering that]]:
 $$
 D_uf(a,b)=\frac{\partial f}{\partial x}(a,b)\cos\theta+\frac{\partial f}{\partial y}(a,b)\sin\theta
 $$
@@ -43,6 +43,6 @@ When we find the value of $D$, what we're actually calculating is:
 ##### Example
 Let $f(x,y)=x^2+y^2-2x-6y+14$, find the maximums and minimums of the function.
 
-![2022-03-28-115658_342x817_scrot](Files/2022-03-28-115658_342x817_scrot.png)
+![[Files/2022-03-28-115658_342x817_scrot.png]]
 
 #math #calculus 

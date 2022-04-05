@@ -4,6 +4,6 @@ disableToc: true
 ---
 
 ### Syllogism 
-Argument that uses [deductive reasoning](natural-deduction.md) to reach a conclusion.
+Argument that uses [[notes/natural-deduction|deductive reasoning]] to reach a conclusion.
 
 #logic 

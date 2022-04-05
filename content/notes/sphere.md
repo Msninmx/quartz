@@ -5,7 +5,7 @@ disableToc: true
 
 ### Spheres
 ##### Formal Definition
-A sphere is the group of all points in [3 dimensional space](coordinate-systems-in-3-dimensions.md) that are equidistant from some point $C(h,j,l)$.
+A sphere is the group of all points in [[notes/coordinate-systems-in-3-dimensions|3 dimensional space]] that are equidistant from some point $C(h,j,l)$.
 
 Coordinates for the center of sphere are $h, k, l$.
 Points on its surface are $x, y, z$.

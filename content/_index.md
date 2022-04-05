@@ -12,9 +12,9 @@ This site hosts the notes taken over the course of my university career in Mathe
 3. Pages linking to current page can be found under __Backlinks__.
 
 ### Entry Points
-- [Logic](/notes/logic.md)
-- [Multivariable Calculus](/notes/partial-derivatives.md)
-- [R](/notes/R-programming-language.md)
+- [[notes/logic|Logic]]
+- [[notes/partial-derivatives|Multivariable Calculus]]
+- [[notes/R-programming-language|R]]
 
 ### All Notes
-> [All Notes](/notes)
+> [[/notes|All Notes]]

@@ -4,7 +4,7 @@ disableToc: true
 ---
 
 ### Directional Derivatives in $\mathbb{R}^3$
-The [directional derivative](directional-derivative.md) in $f$ in the direction of $u$ is defined as:
+The [[notes/directional-derivative|directional derivative]] in $f$ in the direction of $u$ is defined as:
 $$
 D_uf(x_0,y_0,z_0)=f_x(x_0,y_0,z_0)u_1+f_y(x_0,y_0,z_0)u_2+f_z(x_0,y_0,z_0)u_3
 $$

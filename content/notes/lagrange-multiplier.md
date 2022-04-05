@@ -4,14 +4,14 @@ disableToc: true
 ---
 
 ### Lagrange Multiplier
-Given a [multivariable function](multivariable-functions.md), and a [constraint](constrained-maximum-minimum.md), we use a Lagrange Multiplier, $\lambda$, to find its minimums and maximums. The Lagrangian Function has the form:
+Given a [[notes/multivariable-functions|multivariable function]], and a [[notes/constrained-maximum-minimum|constraint]], we use a Lagrange Multiplier, $\lambda$, to find its minimums and maximums. The Lagrangian Function has the form:
 $$
 \mathcal{L}(x,\lambda)=f(x)-\lambda g(x)
 $$
 Where $f(x)$ is the original function and $g(x)$ is the constraint. This can be generalized for any number of variables.
 
 ##### Example
-We'll use the same example as in the [constraint](constrained-maximum-minimum.md) note.
+We'll use the same example as in the [[notes/constrained-maximum-minimum|constraint]] note.
 
 Given a function $w=x^2+y^2+z^2$, we have the constraint $2z+x-y=6$. Find the critical points of the original function and whether they're maximums, minimums, or saddle points.
 
@@ -54,6 +54,6 @@ $$
 $$
 ##### Example
 Given the function $f(x,y,z)=xy+yz$, and the constraints $g_1(x,y)=x^2+y^2=8$, $g_2(y,z)=yz=8$, find the extrema using Lagrange Multiplication.
-![solution](2022-04-04-122210_1158x751_scrot.png)
+![[Files/2022-04-04-122210_1158x751_scrot.png|solution]]
 
 #math #calculus 

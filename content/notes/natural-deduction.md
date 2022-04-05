@@ -4,7 +4,7 @@ disableToc: true
 ---
 
 ### Natural Deduction
-[Logic](logic.md) allows us to infer, through simple syntactical manipulation, new ideas from old ones.
+[[notes/logic|Logic]] allows us to infer, through simple syntactical manipulation, new ideas from old ones.
 
 An argument is formed through a series of initial statements call Premises. It is considered valid if its premises are valid.
 

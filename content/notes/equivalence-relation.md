@@ -4,6 +4,6 @@ disableToc: true
 ---
 
 ### Equivalence Relation
-An equivalence relation is a [relation](relations.md) that is [reflexive](reflexive-relations.md), [symmetric](symmetric-relations.md), and [transitive](transitive-relations.md). It is the opposite of a [partially ordered relation](partial-order-relation.md).
+An equivalence relation is a [[notes/relations|relation]] that is [[notes/reflexive-relations|reflexive]], [[notes/symmetric-relations|symmetric]], and [[notes/transitive-relations|transitive]]. It is the opposite of a [[notes/partial-order-relation|partially ordered relation]].
 
 #logic

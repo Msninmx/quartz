@@ -4,7 +4,7 @@ disableToc: true
 ---
 
 ### Tangent Plane
-The infinitely small point on $z=f(x,y)$ is flat, and if we were to extend it infinitely across [3 dimensions](coordinate-systems-in-3-dimensions.md), we'll get a tangent plane to the original surface.
+The infinitely small point on $z=f(x,y)$ is flat, and if we were to extend it infinitely across [[notes/coordinate-systems-in-3-dimensions|3 dimensions]], we'll get a tangent plane to the original surface.
 
 The plane tangent to the surface $z=f(x,y)$ at the point $P=(x_0,y_0,z_0)$ is:
 $$

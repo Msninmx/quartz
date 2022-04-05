@@ -4,6 +4,6 @@ disableToc: true
 ---
 
 ### Partial Order Relation
-A partial order relation is a [relation](relations.md) that is [irreflexive](irreflexive-relations.md), [asymmetric](partial-order-relation.md), and not [transitive](transitive-relations.md). It is the opposite of an [equivalence relation](equivalence-relation.md).
+A partial order relation is a [[notes/relations|relation]] that is [[notes/irreflexive-relations|irreflexive]], [[notes/partial-order-relation|asymmetric]], and not [[notes/transitive-relations|transitive]]. It is the opposite of an [[notes/equivalence-relation|equivalence relation]].
 
 #logic 

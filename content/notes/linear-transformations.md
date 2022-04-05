@@ -8,10 +8,10 @@ The linear transformation $T: \mathbb{R}^n \to \mathbb{R}^m$, where $n$ and $m$ 
 1. $T(x+y) = T(x)+T(y), x,y \in \mathbb{R}^n$
 2. $T(ax)=aT(x), a \in \mathbb{R}, x \in \mathbb{R}^n$
 
-This first property shows that applying a transformation to a sum of vectors is the same applying the transformation to the [vectors](vector.md) and then adding the results.
+This first property shows that applying a transformation to a sum of vectors is the same applying the transformation to the [[notes/vector|vectors]] and then adding the results.
 The second property shows that scalar multiplication in transformations is distributive.
 
-Linear transformations can also be applied to $n \times m$ [matrices](matrix.md), depending on the dimensional space.
+Linear transformations can also be applied to $n \times m$ [[notes/matrix|matrices]], depending on the dimensional space.
 
 ##### Example
 Let $T: \mathbb{R}^2 \to \mathbb{R}^2$ be defined as $T(v_1,v_2) = (v_1-v_2, v_1+2v_2)$. Check if $T$ is a linear transformation.

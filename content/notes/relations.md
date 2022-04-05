@@ -4,7 +4,7 @@ disableToc: true
 ---
 
 ### Relations
-A relations is a [set](set-theory.md) of ordered pairs created by taking elements from either a single set $A$, or two sets $A$, $B$.
+A relations is a [[notes/set-theory|set]] of ordered pairs created by taking elements from either a single set $A$, or two sets $A$, $B$.
 
 If $A$ and $B$ are sets, $R$ is relation between the sets.
 $$

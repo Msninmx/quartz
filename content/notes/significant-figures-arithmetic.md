@@ -4,7 +4,7 @@ disableToc: true
 ---
 
 ### SigFig Arithmetic
-**Rule:** adding or subtracting [numbers with decimals](significant-figures.md), the number of decimals of the answer is equal to the number with the least amount of decimal places.
+**Rule:** adding or subtracting [[notes/significant-figures|numbers with decimals]], the number of decimals of the answer is equal to the number with the least amount of decimal places.
 $$
 \begin{align}
 	18.345+234.3+0.8294&=253.4744 \\

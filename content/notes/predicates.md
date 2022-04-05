@@ -6,7 +6,7 @@ disableToc: true
 ### Predicates
 A predicate is a statement that follows the following three rules:
 1. It contains 1 or more variables
-2. It's not a [proposition](propositions.md), _but_
+2. It's not a [[notes/propositions|proposition]], _but_
 3. It becomes a proposition when its variables are substituted for concrete values.
 
 ##### Example

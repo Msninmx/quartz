@@ -9,7 +9,7 @@ $$
 \nabla f(x_0,y_0)=\lambda \cdot \nabla g(x_0,y_0)
 $$
 
-where $\nabla$ is the [gradient vector](gradient-vector.md) of the function.
+where $\nabla$ is the [[notes/gradient-vector|gradient vector]] of the function.
 ##### Example
 At what point in the circle $x^2+y^2=1$ is the product $xy$ largest?
 

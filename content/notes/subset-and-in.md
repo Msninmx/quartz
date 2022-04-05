@@ -4,7 +4,7 @@ disableToc: true
 ---
 
 ### $\subset$ and $\in$
-The [subset](subsets.md) symbol $\subset$ is only used when referring to sets and not individual elements inside the sets.
+The [[notes/subsets|subset]] symbol $\subset$ is only used when referring to sets and not individual elements inside the sets.
 
 The symbol $\in$ is used to show whether or not an element is inside a given set. If the element shown is inside brackets, it is its own set, and must be treated accordingly.
 $$
@@ -14,7 +14,7 @@ $$
 	7 &\notin A
 \end{align}
 $$
-The [null set](null-set.md) is a subset of every set, but is not always included as an element is every set.
+The [[notes/null-set|null set]] is a subset of every set, but is not always included as an element is every set.
 
 ##### Examples:
 Let $A$, $B$, and $C$ be the following sets:

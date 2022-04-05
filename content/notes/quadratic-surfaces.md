@@ -14,6 +14,6 @@ There are 6 basic quadratic surfaces:
 - Elliptic paraboloid: Rounded cone
 - Hyperbolic paraboloid: Saddle
 
-These surfaces take place in [3D space](coordinate-systems-in-3-dimensions.md).
+These surfaces take place in [[notes/coordinate-systems-in-3-dimensions|3D space]].
 
 #math 

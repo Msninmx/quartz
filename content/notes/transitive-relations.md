@@ -4,7 +4,7 @@ disableToc: true
 ---
 
 ### Transitive Relations
-A [relation](relations.md) $R$ is _transitive_ if we can find a [hypothetical syllogism](laws-of-logical-inference.md) within its elements.
+A [[notes/relations|relation]] $R$ is _transitive_ if we can find a [[notes/laws-of-logical-inference|hypothetical syllogism]] within its elements.
 $$
 (xRy)\land(yRz) \to xRz
 $$
