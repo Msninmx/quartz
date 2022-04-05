@@ -8,7 +8,7 @@ This site hosts the notes taken over the course of my university career in Mathe
 
 ### How to use this site
 1. Each topic is on its own page.
-2. Search for text with `/`.
+2. Search for text with `Ctrl+k`.
 3. Pages linking to current page can be found under __Backlinks__.
 
 ### Entry Points
