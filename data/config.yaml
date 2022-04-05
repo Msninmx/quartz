@@ -1,14 +1,13 @@
-name: Jacky Zhao
+name: Miguel Nguyen
 enableToc: true
 enableLinkPreview: true
 enableLatex: true
 description:
-  Host your second brain and digital garden for free. Quartz features extremely fast full-text search,
-  Wikilink support, backlinks, local graph, tags, and link previews.
+  Second brain for hosting course notes.
 page_title:
-  "🪴 Quartz 3.2"
+  Digital Brain
 links:
   - link_name: Twitter
-    link: https://twitter.com/_jzhao
+    link: https://twitter.com/_alwaysbeenme
   - link_name: Github
-    link: https://github.com/jackyzha0
+    link: https://github.com/Msninmx/ 
