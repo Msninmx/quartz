@@ -12,8 +12,8 @@ This site hosts the notes taken over the course of my university career in Mathe
 3. Pages linking to current page can be found under __Backlinks__.
 
 ### Entry Points
-- [Logic](logic.md)
-- [Multivariable Calculus](partial-derivatives.md)
+- [Logic](/notes/logic.md)
+- [Multivariable Calculus](/notes/partial-derivatives.md)
 - [R](R-programming-language.md)
 
 ### All Notes
