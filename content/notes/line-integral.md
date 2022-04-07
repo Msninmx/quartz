@@ -19,7 +19,7 @@ Where:
 $$
 \int_C \boldsymbol{F}\cdot d \boldsymbol{r}=\int_a^b \boldsymbol{F}\cdot \boldsymbol{r'}(t)dt
 $$
-Line integrals on a vectorial field can be seen as the amount of work done by the vectorial field on a particle.
+Line integrals on a [[vector-field|vectorial field]] can be seen as the amount of work done by the vectorial field on a particle.
 
 $\boldsymbol{F}$ is generally a function for force, whose values for $x$ and $y$ are substituted with the components of $r$, the position function.
 

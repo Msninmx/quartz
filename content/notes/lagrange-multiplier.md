@@ -54,6 +54,6 @@ $$
 $$
 ##### Example
 Given the function $f(x,y,z)=xy+yz$, and the constraints $g_1(x,y)=x^2+y^2=8$, $g_2(y,z)=yz=8$, find the extrema using Lagrange Multiplication.
-![[Files/2022-04-04-122210_1158x751_scrot.png|solution]]
+[solution](/files/lagrange.png)
 
 #math #calculus 
