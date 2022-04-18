@@ -4,7 +4,7 @@ disableToc: true
 ---
 
 ### Line Integral
-Line integrals are those where the function is integrated along a curve on a scalar field or [[vector-field|vector field]].
+Line integrals are those where the function is [[notes/integration|integrated]] along a curve on a scalar field or [[vector-field|vector field]].
 
 #### Scalar field form
 $$
@@ -12,8 +12,6 @@ $$
 $$
 Where:
 - $ds$ is the length along the curve defined as $$dS=\sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2}dt$$
-- 
-
 
 #### Vector field form
 $$
