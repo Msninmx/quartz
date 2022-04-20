@@ -1,8 +1,9 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Tangent Plane The infinitely small point on $z=f(x,y)$ is flat, and if we were to extend it infinitely across [[notes/coordinate-systems-in-3-dimensions|3 dimensions]], we&rsquo;ll get a tangent plane to the original surface.">
-<title>Tangent Plane</title>
+<meta name=description content="Surface Integrals Similar to [[notes/line-integral|line integrals]], surface integrals take some function $f$ with $3$ variables, $x,y,z$.
+This integral can be approximated as $$ \mathrm{d}S=|r_u \times r_v| \mathrm{d}A $$">
+<title>Surface Integrals</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://msninmx.github.io/quartz//icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
@@ -38,7 +39,7 @@
 </div>
 </header>
 <article>
-<h1>Tangent Plane</h1>
+<h1>Surface Integrals</h1>
 <p class=meta>
 Last updated April 20, 2022
 </p>
@@ -50,30 +51,24 @@ Last updated April 20, 2022
 <ol>
 <li>
 <ol>
-<li><a href=#tangent-plane>Tangent Plane</a></li>
+<li><a href=#surface-integrals>Surface Integrals</a></li>
 </ol>
 </li>
 </ol>
 </nav>
 </aside>
-<h3 id=tangent-plane>Tangent Plane</h3>
-<p>The infinitely small point on $z=f(x,y)$ is flat, and if we were to extend it infinitely across <a href=/quartz/notes/coordinate-systems-in-3-dimensions rel=noopener class=internal-link data-src=/quartz/notes/coordinate-systems-in-3-dimensions>3 dimensions</a>, we&rsquo;ll get a tangent plane to the original surface.</p>
-<p>The plane tangent to the surface $z=f(x,y)$ at the point $P=(x_0,y_0,z_0)$ is:
+<h3 id=surface-integrals>Surface Integrals</h3>
+<p>Similar to <a href=/quartz/notes/line-integral rel=noopener class=internal-link data-src=/quartz/notes/line-integral>line integrals</a>, surface integrals take some function $f$ with $3$ variables, $x,y,z$.</p>
+<p>This integral can be approximated as
 $$
-z-z_0=f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)
+\mathrm{d}S=|r_u \times r_v| \mathrm{d}A
 $$</p>
+<p>Given this, we can have a parametric surface that can be integrated with
+$$
+\iint_Sf(x,y,z)\mathrm{d}S=\iint_Df(r(u,v))|r_{u}\times r_{v}|\mathrm{d}A</p>
+<p>$$</p>
 <h5 id=example>Example</h5>
-<p>Find the equation of the plane tangent to $z=2x^2+y^2$ at the point $P(1,1,3)$.</p>
-<p>First we find the partial derivatives with respect to $x$ and $y$.
-$$
-\begin{align}
-f_x(x_0, y_0) = 4x && f_x(1,1)=4 \\\\f_y(x_0, y_0) = 2y && f_y(1,1)=2 \\\end{align}
-$$
-$$
-\begin{align}
-z-3&=4(x-1)+2(y-1) \\z &= 4x+2y+3 \\\end{align}
-$$</p>
-<p>#math #calculus</p>
+<p>Evaluate the integral $\iint_S \sqrt{1+x^2+y^2}\mathrm{d}S$, where $S$ is the surface defined by $r=u\cos vi + u\sin vj + vk$, where $0\leq u \leq 2$, $0\leq u \leq 4\pi$.</p>
 </article>
 <hr>
 <div class=page-end>
@@ -91,7 +86,7 @@ No backlinks found
 <div id=graph-container></div>
 <style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
 <script src=https://msninmx.github.io/quartz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
-<script>drawGraph("https://msninmx.github.io/quartz/notes/tangent-plane","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+<script>drawGraph("https://msninmx.github.io/quartz/notes/surface-integral","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
 </div>
 </div>
 <div id=contact_buttons>

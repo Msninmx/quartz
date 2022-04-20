@@ -1,7 +1,7 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Green&rsquo;s Theorem $$ \oint_C P(x,y)dx+Q(x,y)dy=\iint_R \frac{\partial P}{\partial y}-\frac{\partial Q}{\partial x}dA $$ #math">
+<meta name=description content="Green&rsquo;s Theorem Supposing that $C$ is a simple closed curve over a range $R$. If $P$ and $Q$, being vectorial functions, and their derivatives are continuous over $R$, then: $$ \oint_C P(x,y)dx+Q(x,y)dy=\iint_R \frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}dA $$">
 <title>Green's Theorem</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://msninmx.github.io/quartz//icon.png>
@@ -11,7 +11,7 @@
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
-<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.8c25477c0d2e2b7170eebf5858492e98.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.ea0af349c55c69ea7abab3183acf17fd.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.5770b438b4e3901791e05896d26c77ea.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.f33027d7739633ab54a893640f8b352f.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
@@ -40,7 +40,7 @@
 <article>
 <h1>Green's Theorem</h1>
 <p class=meta>
-Last updated April 18, 2022
+Last updated April 20, 2022
 </p>
 <ul class=tags>
 </ul>
@@ -57,9 +57,20 @@ Last updated April 18, 2022
 </nav>
 </aside>
 <h3 id=greens-theorem>Green&rsquo;s Theorem</h3>
-<p>$$
-\oint_C P(x,y)dx+Q(x,y)dy=\iint_R \frac{\partial P}{\partial y}-\frac{\partial Q}{\partial x}dA
+<p>Supposing that $C$ is a simple closed curve over a range $R$. If $P$ and $Q$, being vectorial functions, and their derivatives are continuous over $R$, then:
 $$
+\oint_C P(x,y)dx+Q(x,y)dy=\iint_R \frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}dA
+$$</p>
+<h4 id=proof>Proof</h4>
+<p>Considering a curve $C$ subjected to a simple vector field $P(x,y)$
+$$
+\oint_CP\mathrm{d}x=\int_{a}^{b} \mathrm{d}x+\int_{b}^{a} P\mathrm{d}x=
+\int_{a}^{b} P(x_1,y)\mathrm{d}x-\int_{a}^{b} P(x_2,y)\mathrm{d}x=
+\int_{a}^{b} P(x,y) \bigg|<em>{x_1}^{x_2}=
+\int</em>{a}^{b} \int_{x_2}^{x_1} \frac{\partial P}{\partial y}\mathrm{d}y\mathrm{d}x=
+-\int_{a}^{b} \int_{x_2}^{x_1} \frac{\partial P}{\partial y}\mathrm{d}A</p>
+<p>$$
+!<a class="internal-link broken">files/2022-04-20-085721_729x835_scrot.png</a>
 #math</p>
 </article>
 <hr>
