@@ -37,3 +37,6 @@ This double integration can also be written as
 $$
 \int\left[\int 2x+4xy\ dy\right]dx
 $$
+
+#### Limits
+Double integrals can also have limits, where each individual integration has it's own specific limits.
