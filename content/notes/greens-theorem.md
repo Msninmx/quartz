@@ -17,7 +17,6 @@ $$
 \int_{a}^{b} P(x,y) \bigg|_{x_1}^{x_2}=
   \int_{a}^{b} \int_{x_2}^{x_1} \frac{\partial P}{\partial y}\mathrm{d}y\mathrm{d}x=
   -\int_{a}^{b} \int_{x_2}^{x_1} \frac{\partial P}{\partial y}\mathrm{d}A
-
 $$
 ![[files/2022-04-20-085721_729x835_scrot.png]]
 #math
