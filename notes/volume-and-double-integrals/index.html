@@ -1,8 +1,9 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Set Union Union: The union of sets $A$ and $B$ in the [[notes/universal-set|universal set]] $U$ is defined as $$A \cup B = { x \in U | x \in A \lor x \in B }$$ #logic #setTheory">
-<title>Set Union</title>
+<meta name=description content="Volume and Double Integrals We can use [[notes/double-integration|double integrals]] to find the volumes of solids.
+If $f(x,y)\geq 0$, then the volume $V$ of the solid that is between the plane and below the surface $f$ is: $$ V=\iint_Rf(x,y)dA $$ where $R$ is the region being integrated, and the differential of area $dA$, is equal to the product of the differential on $x$ and on $y$.">
+<title>Volume and Double Integrals</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://msninmx.github.io/quartz//icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
@@ -38,7 +39,7 @@
 </div>
 </header>
 <article>
-<h1>Set Union</h1>
+<h1>Volume and Double Integrals</h1>
 <p class=meta>
 Last updated April 25, 2022
 </p>
@@ -50,16 +51,35 @@ Last updated April 25, 2022
 <ol>
 <li>
 <ol>
-<li><a href=#set-union>Set Union</a></li>
+<li><a href=#volume-and-double-integrals>Volume and Double Integrals</a></li>
+<li><a href=#case-2>Case 2:</a></li>
 </ol>
 </li>
 </ol>
 </nav>
 </aside>
-<h3 id=set-union>Set Union</h3>
-<p><strong>Union:</strong> The union of sets $A$ and $B$ in the <a href=/quartz/notes/universal-set rel=noopener class=internal-link data-src=/quartz/notes/universal-set>universal set</a> $U$ is defined as
-$$A \cup B = { x \in U | x \in A \lor x \in B }$$
-#logic #setTheory</p>
+<h3 id=volume-and-double-integrals>Volume and Double Integrals</h3>
+<p>We can use <a href=/quartz/notes/double-integration rel=noopener class=internal-link data-src=/quartz/notes/double-integration>double integrals</a> to find the volumes of solids.</p>
+<p>If $f(x,y)\geq 0$, then the volume $V$ of the solid that is between the plane and below the surface $f$ is:
+$$
+V=\iint_Rf(x,y)dA
+$$
+where $R$ is the region being integrated, and the differential of area $dA$, is equal to the product of the differential on $x$ and on $y$.</p>
+<h4 id=case-1>Case 1:</h4>
+<p>Volume over a closed rectangle:
+$$
+R={(x,y)\quad a\leq b\leq x; \quad c\leq y\leq d}
+$$</p>
+<h3 id=case-2>Case 2:</h3>
+<p>Volume over a flat closed surface delimited by a function $g$:
+$$
+R={(x,y)\quad a\leq b\leq x; \quad g_1\leq y\leq g_2}
+$$
+This is integrated as:
+$$
+\int_a^b\int_{y_1=g_1(x)}^{y_2=g_2(x)}f(x,y)dydx
+$$
+When integrating with limits defined by functions, we integrate with respect to these functions first.</p>
 </article>
 <hr>
 <div class=page-end>
@@ -67,10 +87,7 @@ $$A \cup B = { x \in U | x \in A \lor x \in B }$$
 <h3>Backlinks</h3>
 <ul class=backlinks>
 <li>
-<a href=/quartz/notes/cartesian-product>Cartesian Product</a>
-</li>
-<li>
-<a href=/quartz/notes/demorgans-law>De Morgan's Law</a>
+No backlinks found
 </li>
 </ul>
 </div>
@@ -80,7 +97,7 @@ $$A \cup B = { x \in U | x \in A \lor x \in B }$$
 <div id=graph-container></div>
 <style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
 <script src=https://msninmx.github.io/quartz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
-<script>drawGraph("https://msninmx.github.io/quartz/notes/set-union","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+<script>drawGraph("https://msninmx.github.io/quartz/notes/volume-and-double-integrals","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
 </div>
 </div>
 <div id=contact_buttons>
