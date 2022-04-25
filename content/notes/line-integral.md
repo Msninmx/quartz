@@ -66,18 +66,3 @@ Now we solve the integral
 $$
 256\int_0^{\frac{\pi}{2}}u^2du=256\frac{u^3}{3}\Big|_0^{\frac{\pi}{2}}=\frac{256}{3}\sin^3t \Big|_0^{\frac{\pi}{2}}=\frac{256}{3}[\sin^3\frac{\pi}{2}-\sin^30]=\frac{256}{3}
 $$
-
-##### Example
-Evaluate the integral $\int_C \boldsymbol{F}\cdot dr$, with $\boldsymbol{F}=xy i+y^2j$ on the interval $-1\leq t \leq 1$, where $C$ is define as $\boldsymbol{r}(t)=e^{-t}i+e^tj$
-
-Since we have our function $r$, we can find $dr$, since $r$ is a function dependent on time $t$.
-$$
-\begin{align}
-	\frac{d\vec{r}}{dt}&=-e^{-t}i+e^tj \\
-	d \vec{r}&=[-e^{-t}i+e^tj]dt
-\end{align}
-$$
-Now we can use $dr$ to solve the integral
-$$
-\int_C
-$$

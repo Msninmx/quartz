@@ -27,6 +27,3 @@ $$
 \int_a^b\int_{y_1=g_1(x)}^{y_2=g_2(x)}f(x,y)dydx
 $$
 When integrating with limits defined by functions, we integrate with respect to these functions first.
- $x$ can also be 
-
-#### Case 3:
