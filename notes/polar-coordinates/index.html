@@ -1,8 +1,8 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Inverse Relations Let $R$ be a [[notes/relations|relation]]. The inverse of $R$ is obtained by reversing each pair of ordered numbers inside the relation, and is denoted with $R^{-1}$.">
-<title>Inverse Relations</title>
+<meta name=description content="Polar Coordinates On a Cartesian Plane, a point can be can be represented with a length and and angle: $$ P(r,\theta) $$ $r$ is defined as the distance between the point and the origin, and $\theta$ is the angle formed between $r$ and the $x$ axis.">
+<title>Polar Coordinates</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://msninmx.github.io/quartz//icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
@@ -38,7 +38,7 @@
 </div>
 </header>
 <article>
-<h1>Inverse Relations</h1>
+<h1>Polar Coordinates</h1>
 <p class=meta>
 Last updated April 27, 2022
 </p>
@@ -50,18 +50,38 @@ Last updated April 27, 2022
 <ol>
 <li>
 <ol>
-<li><a href=#inverse-relations>Inverse Relations</a></li>
+<li><a href=#polar-coordinates>Polar Coordinates</a></li>
 </ol>
 </li>
 </ol>
 </nav>
 </aside>
-<h3 id=inverse-relations>Inverse Relations</h3>
-<p>Let $R$ be a <a href=/quartz/notes/relations rel=noopener class=internal-link data-src=/quartz/notes/relations>relation</a>. The inverse of $R$ is obtained by reversing each pair of ordered numbers inside the relation, and is denoted with $R^{-1}$.
+<h3 id=polar-coordinates>Polar Coordinates</h3>
+<p>On a Cartesian Plane, a point can be can be represented with a length and and angle:
 $$
-R^{-1}={(y,x)|(x,y)\in R}
+P(r,\theta)
+$$
+$r$ is defined as the distance between the point and the origin, and $\theta$ is the angle formed between $r$ and the $x$ axis.</p>
+<h4 id=conversion-to-rectangular-coordinates>Conversion to rectangular coordinates</h4>
+<p>To change from polar coordinates to rectangular ones:
+$$
+x=r\cos\theta\qquad y=r\sin\theta
+$$
+To change from rectangular coordinates to polar:
+$$
+r^2=x^2+y^2\qquad \tan\theta=\frac{y}{x}, \quad x\neq0
 $$</p>
-<p>#logic #setTheory</p>
+<h4 id=conversion-to-rectangular-functions>Conversion to rectangular functions</h4>
+<p>To convert a function that accepts rectangular coordinates $(x,y)$, to one that accepts polar coordinates $(r,\theta)$, the substitution is the same.</p>
+<h5 id=example>Example</h5>
+<p>Express $x^2=4y$ in polar coordinates
+$$
+\begin{align}
+x^2&=4y \\(r\cos\theta)^2&=4(r\sin\theta) \\r^2\cos^2\theta&=4r\sin\theta \\r&=4\frac{\sin\theta}{\cos^2\theta} \\r&=4\sec\theta\sin\theta
+\end{align}
+$$</p>
+<h4 id=use-cases>Use Cases</h4>
+<p>One use case of polar coordinates are in <a href=/quartz/notes/double-integration rel=noopener class=internal-link data-src=/quartz/notes/double-integration>double integrals</a>, either when the limits have terms of the form $x^2+y^2$, or when the function has terms of the form $x^2+y^2, x^2, y^2$.</p>
 </article>
 <hr>
 <div class=page-end>
@@ -69,7 +89,7 @@ $$</p>
 <h3>Backlinks</h3>
 <ul class=backlinks>
 <li>
-No backlinks found
+<a href=/quartz/notes/double-integration>Double Integration</a>
 </li>
 </ul>
 </div>
@@ -79,7 +99,7 @@ No backlinks found
 <div id=graph-container></div>
 <style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
 <script src=https://msninmx.github.io/quartz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
-<script>drawGraph("https://msninmx.github.io/quartz/notes/inverse-relations","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+<script>drawGraph("https://msninmx.github.io/quartz/notes/polar-coordinates","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
 </div>
 </div>
 <div id=contact_buttons>

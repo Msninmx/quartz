@@ -1,8 +1,8 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Polar Coordinates On a Cartesian Plane, a point can be can be represented with a length and and angle: $$ P(r,\theta) $$ $r$ is defined as the distance between the point and the origin, and $\theta$ is the angle formed between $r$ and the $x$ axis.">
-<title>Polar Coordinates</title>
+<meta name=description content="Differential Equations A differential equation is any equations that contains the derivative of one or more unknown functions. $$ a_n(x)\frac{\mathrm{d}^ny}{\mathrm{d}x^{n}}+a_{n-1}(x)\frac{\mathrm{d}^{n-1}y}{\mathrm{d}x^{n-1}}+\dots=y $$">
+<title>Differential Equations</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://msninmx.github.io/quartz//icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
@@ -11,7 +11,7 @@
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
-<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.ba29321279b2110ec743c57adaf9c580.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.6daa2decc3e0f24c2742135e2e1bacdc.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.7bc34f217243d9c73273179eed79a0ac.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.6f95c2cb877a8149443dbfb445f1e2fb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
@@ -38,9 +38,9 @@
 </div>
 </header>
 <article>
-<h1>Polar Coordinates</h1>
+<h1>Differential Equations</h1>
 <p class=meta>
-Last updated April 25, 2022
+Last updated April 27, 2022
 </p>
 <ul class=tags>
 </ul>
@@ -50,38 +50,89 @@ Last updated April 25, 2022
 <ol>
 <li>
 <ol>
-<li><a href=#polar-coordinates>Polar Coordinates</a></li>
+<li><a href=#differential-equations>Differential Equations</a></li>
+<li><a href=#algebraic-solution>Algebraic Solution</a></li>
+<li><a href=#steps-for-solving>Steps for solving</a></li>
+<li><a href=#higher-order-differential-equations>Higher Order Differential Equation{s</a></li>
 </ol>
 </li>
 </ol>
 </nav>
 </aside>
-<h3 id=polar-coordinates>Polar Coordinates</h3>
-<p>On a Cartesian Plane, a point can be can be represented with a length and and angle:
+<h3 id=differential-equations>Differential Equations</h3>
+<p>A differential equation is any equations that contains the derivative of one or more unknown functions.
 $$
-P(r,\theta)
-$$
-$r$ is defined as the distance between the point and the origin, and $\theta$ is the angle formed between $r$ and the $x$ axis.</p>
-<h4 id=conversion-to-rectangular-coordinates>Conversion to rectangular coordinates</h4>
-<p>To change from polar coordinates to rectangular ones:
-$$
-x=r\cos\theta\qquad y=r\sin\theta
-$$
-To change from rectangular coordinates to polar:
-$$
-r^2=x^2+y^2\qquad \tan\theta=\frac{y}{x}, \quad x\neq0
+a_n(x)\frac{\mathrm{d}^ny}{\mathrm{d}x^{n}}+a_{n-1}(x)\frac{\mathrm{d}^{n-1}y}{\mathrm{d}x^{n-1}}+\dots=y
 $$</p>
-<h4 id=conversion-to-rectangular-functions>Conversion to rectangular functions</h4>
-<p>To convert a function that accepts rectangular coordinates $(x,y)$, to one that accepts polar coordinates $(r,\theta)$, the substitution is the same.</p>
-<h5 id=example>Example</h5>
-<p>Express $x^2=4y$ in polar coordinates
+<h3 id=algebraic-solution>Algebraic Solution</h3>
+<p>A differential equation can be solved using only algebra, and the standard value for $y$ will always be $e^{mx}$, as long as the differential equation has constant coefficients.
 $$
 \begin{align}
-x^2&=4y \\(r\cos\theta)^2&=4(r\sin\theta) \\r^2\cos^2\theta&=4r\sin\theta \\r&=4\frac{\sin\theta}{\cos^2\theta} \\r&=4\sec\theta\sin\theta
+y&=c_1e^{mx}\\y'&=c_2me^{mx}
 \end{align}
 $$</p>
-<h4 id=use-cases>Use Cases</h4>
-<p>One use case of polar coordinates are in <a href=/quartz/notes/double-integration rel=noopener class=internal-link data-src=/quartz/notes/double-integration>double integrals</a>, either when the limits have terms of the form $x^2+y^2$, or when the function has terms of the form $x^2+y^2, x^2, y^2$.</p>
+<h3 id=steps-for-solving>Steps for solving</h3>
+<ol>
+<li>Verify that the differential equation has constant coefficients.</li>
+<li>Find the characteristic equation.</li>
+<li>Solve for $m$</li>
+<li>Find the general form of the solution.</li>
+</ol>
+<h5 id=example>Example</h5>
+<p>Find a solution for the differential equation $2y'+5y=0$.</p>
+<p>We replace $y$ with the general solution $e^{mx}$.
+$$
+2[me^{mx}]+5[e^{mx}]=0
+$$</p>
+<h3 id=higher-order-differential-equations>Higher Order Differential Equation{s</h3>
+<p>The equation can be rewritten as
+$$
+ay''+by'+cy=am^2e^{mx}+bme^{mx}+ce^{mx}=0
+$$
+and we can solve for $m$ using the general formula for quadratics
+$$
+\begin{align}
+m_1=\frac{-b+\sqrt{b^2-4ac}}{2a} &&
+m_2=\frac{-b-\sqrt{b^2-4ac}}{2a}
+\end{align}
+$$</p>
+<h4 id=example-1>Example</h4>
+<p>Solve the differential equation $2y''-5y-3=0$.</p>
+<p>We rewrite this using its general solution. Note that it&rsquo;s not necessary to write $e^{mx}$, since this term can never be equal to $0$.
+$$
+2m^2-5m-3=0
+$$
+Using the general formula, we solve for m
+$$
+\begin{align}
+m_1=3 &&
+m_2=-\frac{1}{2}
+\end{align}
+$$
+Now that we have $m$, we have the general solutions of the equation
+$$
+y=c_1e^{3x}+c_2e^{-1/2}
+$$
+Note that this is only a general equation, since we haven&rsquo;t found the coefficients $c_1$ and $c_2$.</p>
+<h4 id=example-2>Example</h4>
+<p>Solve the differential equation $y''-10y'+25y=0$</p>
+<p>The characteristic equation becomes
+$$
+m^2-10m+25=0
+$$
+We can see that this is a notable product of the form
+$$
+(m-5)^2=0
+$$
+Where the values of $m$ are
+$$
+m_1,m_2=-5
+$$
+Giving us the general solution
+$$
+y=c_1e^{5x}+c_2e^{5x}
+$$
+$e^{5x}$ should not be factorized out, since each of these terms represents a different physical phenomena.</p>
 </article>
 <hr>
 <div class=page-end>
@@ -89,7 +140,7 @@ $$</p>
 <h3>Backlinks</h3>
 <ul class=backlinks>
 <li>
-<a href=/quartz/notes/double-integration>Double Integration</a>
+No backlinks found
 </li>
 </ul>
 </div>
@@ -99,7 +150,7 @@ $$</p>
 <div id=graph-container></div>
 <style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
 <script src=https://msninmx.github.io/quartz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
-<script>drawGraph("https://msninmx.github.io/quartz/polar-coordinates","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+<script>drawGraph("https://msninmx.github.io/quartz/differential-equations","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
 </div>
 </div>
 <div id=contact_buttons>
