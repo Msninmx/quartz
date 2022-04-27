@@ -39,7 +39,7 @@ $$
 $$
 
 #### Polar Coordinates
-When evaluating a double integral, the limits of the integral can be functions, which in turn, means they can be functions using [[polar-coordinates|polar coordinates]].
+When evaluating a double integral, the limits of the integral can be functions, which in turn, means they can be functions using [[notes/polar-coordinates|polar coordinates]].
 
 #### Limits
 Double integrals can also have limits, where each individual integration has it's own specific limits. If some of our limits are functions, they on the inside of the double integral.
@@ -58,8 +58,8 @@ Evaluate the integral
 $$
 \iint_R(x^2+y)\mathrm{d}A
 $$
-When dealing with problems involving circles, it's almost always best to work using [[polar-coordinates#Use Cases|polar coordinates]].
+When dealing with problems involving circles, it's almost always best to work using [[notes/polar-coordinates#Use Cases|polar coordinates]].
 
 The problem gives us the radii of the two circles expressed as functions, which we can interpret as $r$ in polar coordinates. Since these limits are functions, they are the first limits in our integral.
 
-![[2022-04-25-124817_733x749_scrot.png]]
+![[files/2022-04-25-124817_733x749_scrot.png]]
