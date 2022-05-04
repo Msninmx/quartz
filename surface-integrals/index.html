@@ -1,8 +1,8 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Matrix Addition In order to add two [[notes/matrix|matrices]] they must be the same size, and each element of the matrices must be addable.">
-<title>Matrix Addition</title>
+<meta name=description content="Surface Integrals Surface integrals are ways to integrate surfaces. This is done by converting the function defining the surface, normally defined as $r$, into coordinates, $u$ and $v$.">
+<title>Surface Integrals</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://msninmx.github.io/quartz//icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
@@ -38,7 +38,7 @@
 </div>
 </header>
 <article>
-<h1>Matrix Addition</h1>
+<h1>Surface Integrals</h1>
 <p class=meta>
 Last updated May 4, 2022
 </p>
@@ -50,24 +50,24 @@ Last updated May 4, 2022
 <ol>
 <li>
 <ol>
-<li><a href=#matrix-addition>Matrix Addition</a></li>
+<li><a href=#surface-integrals>Surface Integrals</a></li>
 </ol>
 </li>
 </ol>
 </nav>
 </aside>
-<h3 id=matrix-addition>Matrix Addition</h3>
-<h1 id=endbmatrix>In order to add two <a href=/quartz/notes/matrix rel=noopener class=internal-link data-src=/quartz/notes/matrix>matrices</a> they must be the same size, and each element of the matrices must be addable. Each element in each matrix gets added to the element in the same position, and placed in the same position in the answer.
+<h3 id=surface-integrals>Surface Integrals</h3>
+<p>Surface integrals are ways to integrate surfaces. This is done by converting the function defining the surface, normally defined as $r$, into coordinates, $u$ and $v$.
+$$ \iint_{S}f(x,y,z)\mathrm{d}S=\iint_{D}f(r(u,v))\left |\frac{\partial r}{\partial u}\times \frac{\partial r}{\partial v}\right |\mathrm{d}u\mathrm{d}v
+$$</p>
+<p>Surfaces defined as $z=g(x,y)$ can be parameterized as
 $$
-\begin{bmatrix}
--1 & 2 \\0 & 1 \\\end{bmatrix}
-+
-\begin{bmatrix}
-1 & 3 \\-2 & 2 \\\end{bmatrix}</h1>
-<p>\begin{bmatrix}
-0 & 5 \\-1 & 3 \\\end{bmatrix}
-$$
-#math #math #matrices</p>
+\begin{align}
+x=x &&
+y=y &&
+z=g(x,y)
+\end{align}
+$$</p>
 </article>
 <hr>
 <div class=page-end>
@@ -75,7 +75,7 @@ $$
 <h3>Backlinks</h3>
 <ul class=backlinks>
 <li>
-<a href=/quartz/notes/properties-of-matrix-addition-and-scalar-multiplication>Properties of Matrix Addition and Scalar Multiplication</a>
+No backlinks found
 </li>
 </ul>
 </div>
@@ -85,7 +85,7 @@ $$
 <div id=graph-container></div>
 <style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
 <script src=https://msninmx.github.io/quartz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
-<script>drawGraph("https://msninmx.github.io/quartz/notes/matrix-addition","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+<script>drawGraph("https://msninmx.github.io/quartz/surface-integrals","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
 </div>
 </div>
 <div id=contact_buttons>
