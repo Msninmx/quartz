@@ -3,7 +3,7 @@ title: "Variance"
 disableToc: true
 ---
 ### Variance
-Variance is an indicator that shows us how far away we are from a [[expected-value|expected value]], and is defined as:
+Variance is an indicator that shows us how far away we are from a [[notes/expected-value|expected value]], and is defined as:
 $$
 \hat{\sigma}^2 \frac{\Sigma_{i=1}^{N}(x_{i}-\overline{x})^2}{N-1}
 $$
