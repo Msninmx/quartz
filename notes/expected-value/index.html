@@ -1,9 +1,8 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Surface Integrals Similar to [[notes/line-integral|line integrals]], surface integrals take some function $f$ with $3$ variables, $x,y,z$.
-This integral can be approximated as $$ \mathrm{d}S=|r_u \times r_v| \mathrm{d}A $$">
-<title>Surface Integrals</title>
+<meta name=description content="Expected Value Expected value can be considered as the average of the outcomes of a [[notes/random-variable|random variable]].">
+<title>Expected Value</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://msninmx.github.io/quartz//icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
@@ -12,7 +11,7 @@ This integral can be approximated as $$ \mathrm{d}S=|r_u \times r_v| \mathrm{d}A
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
-<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.401ef517e0a8e3a3c96606908e997997.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.69030f32ad82f99c111d15df43b4e0ae.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.a10dc6b1fa9693a8fb0c729627bebba5.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.25ff3c2bf9316f47458f8864f5fa13cf.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
@@ -39,9 +38,9 @@ This integral can be approximated as $$ \mathrm{d}S=|r_u \times r_v| \mathrm{d}A
 </div>
 </header>
 <article>
-<h1>Surface Integrals</h1>
+<h1>Expected Value</h1>
 <p class=meta>
-Last updated May 16, 2022
+Last updated May 17, 2022
 </p>
 <ul class=tags>
 </ul>
@@ -51,24 +50,14 @@ Last updated May 16, 2022
 <ol>
 <li>
 <ol>
-<li><a href=#surface-integrals>Surface Integrals</a></li>
+<li><a href=#expected-value>Expected Value</a></li>
 </ol>
 </li>
 </ol>
 </nav>
 </aside>
-<h3 id=surface-integrals>Surface Integrals</h3>
-<p>Similar to <a href=/quartz/notes/line-integral rel=noopener class=internal-link data-src=/quartz/notes/line-integral>line integrals</a>, surface integrals take some function $f$ with $3$ variables, $x,y,z$.</p>
-<p>This integral can be approximated as
-$$
-\mathrm{d}S=|r_u \times r_v| \mathrm{d}A
-$$</p>
-<p>Given this, we can have a parametric surface that can be integrated with
-$$
-\iint_Sf(x,y,z)\mathrm{d}S=\iint_Df(r(u,v))|r_{u}\times r_{v}|\mathrm{d}A</p>
-<p>$$</p>
-<h5 id=example>Example</h5>
-<p>Evaluate the integral $\iint_S \sqrt{1+x^2+y^2}\mathrm{d}S$, where $S$ is the surface defined by $r=u\cos vi + u\sin vj + vk$, where $0\leq u \leq 2$, $0\leq u \leq 4\pi$.</p>
+<h3 id=expected-value>Expected Value</h3>
+<p>Expected value can be considered as the average of the outcomes of a <a href=/quartz/notes/random-variable rel=noopener class=internal-link data-src=/quartz/notes/random-variable>random variable</a>.</p>
 </article>
 <hr>
 <div class=page-end>
@@ -76,7 +65,7 @@ $$
 <h3>Backlinks</h3>
 <ul class=backlinks>
 <li>
-No backlinks found
+<a href=/quartz/notes/variance>Variance</a>
 </li>
 </ul>
 </div>
@@ -86,7 +75,7 @@ No backlinks found
 <div id=graph-container></div>
 <style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
 <script src=https://msninmx.github.io/quartz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
-<script>drawGraph("https://msninmx.github.io/quartz/notes/surface-integral","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+<script>drawGraph("https://msninmx.github.io/quartz/notes/expected-value","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
 </div>
 </div>
 <div id=contact_buttons>
