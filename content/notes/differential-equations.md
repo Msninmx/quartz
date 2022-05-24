@@ -9,6 +9,8 @@ $$
 $$
 
 
+Normally we work with functions, either graphing them or solving them. However, sometimes we don't have access to this function, only the derivative of the function. Solving a differential equation consists of finding this original equation.
+
 ### Algebraic Solution
 A differential equation can be solved using only algebra, and the standard value for $y$ will always be $e^{mx}$, as long as the differential equation has constant coefficients.
 $$
