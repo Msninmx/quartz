@@ -1,7 +1,7 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Correlation Coefficient Correlation Correlation is a measurement that determines if a variable can be a function of another.">
+<meta name=description content="Correlation Coefficient Correlation is a measurement that determines if a variable can be a function of another. This is useful in determining whether or not a given variable actually effects the end result.">
 <title>Correlation Coefficient</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://msninmx.github.io/quartz//icon.png>
@@ -11,7 +11,7 @@
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
-<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.a10dc6b1fa9693a8fb0c729627bebba5.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.25ff3c2bf9316f47458f8864f5fa13cf.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.90e6929b860866cf848aba924dedd6f3.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.dc2f3119967cb3f5cf792567d6cb02f7.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
@@ -40,7 +40,7 @@
 <article>
 <h1>Correlation Coefficient</h1>
 <p class=meta>
-Last updated May 17, 2022
+Last updated May 24, 2022
 </p>
 <ul class=tags>
 </ul>
@@ -57,8 +57,23 @@ Last updated May 17, 2022
 </nav>
 </aside>
 <h3 id=correlation-coefficient>Correlation Coefficient</h3>
-<h4 id=correlation>Correlation</h4>
-<p>Correlation is a measurement that determines if a variable can be a function of another.</p>
+<p>Correlation is a measurement that determines if a variable can be a function of another. This is useful in determining whether or not a given variable actually effects the end result.</p>
+<p>The formula for the correlation coefficient is:
+$$
+r=\frac{\sum_{i=1}^{N}(x_i-\overline{x})(y_i-\overline{y})}
+{\sqrt{\sum^{N}<em>{i=1}(x_i-\overline{x})^2}
+\sqrt{\sum^{N}</em>{i=1}(y_i-\overline{y})^2}}
+$$
+Where:</p>
+<ul>
+<li>$x_i$ is $x$ value of each independent variable.</li>
+<li>$y_1$ is the $y$ value of each dependent variable.</li>
+<li>$N$ is the number of data points.</li>
+<li>$\overline{x}$ is the average of the $x$ values.</li>
+<li>$\overline{y}$ is the average of the $y$ values.</li>
+</ul>
+<p>$r$ can have a value between $-1$ and $1$, where the sign of $r$ determines if there&rsquo;s a positive or negative correlation.</p>
+<p>If $-0.5 \leq r\leq 0.5$, then there exists a weak correlation. If $-0.8 &lt;r&lt; -0.5$ or $0.5 &lt;r&lt; 0.8$ then there exists a moderate correlation. If $-0.8>r$ or $0.8&lt;r$, then there exists a strong correlation.</p>
 </article>
 <hr>
 <div class=page-end>
