@@ -3,7 +3,7 @@ title: "Divergence"
 disableToc: true
 ---
 ### Divergence
-The divergence of a vector field gives us information about the [[flux]], and is calculated with:
+The divergence of a vector field gives us information about the [[notes/flux]], and is calculated with:
 $$
   divF=\nabla\cdot F=\frac{\partial F_{x}}{\partial x}\frac{\partial F_{y}}{\partial y}\frac{\partial F_{z}}{\partial z}
 $$
