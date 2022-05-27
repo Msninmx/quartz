@@ -1,8 +1,8 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Flux Flux is the measurement of flow, and is calculated using the [[notes/surface-integrals|integral]]: $$ \iint F\cdot \mathrm{d}S $$ When dealing with a flow field of the form $F(x,y,z)=Pi+Qj+Rk$, in some region $z=g(x,y)$, this integral can be rewritten as: $$ \iint\left( -P\frac{\partial g}{\partial x} - Q\frac{\partial g}{\partial y} + R \right) \mathrm{d}A $$ where $\mathrm{d}A$ changes depending on the coordinate system used.">
-<title>Flux</title>
+<meta name=description content="Basic Data Analysis in Python 1 2  import pandas as pd import numpy as np   The two most important libraries in data analysis are Pandas and NumPy.">
+<title>Basic Data Analysis in Python</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://msninmx.github.io/quartz//icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
@@ -11,7 +11,7 @@
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
-<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.90e6929b860866cf848aba924dedd6f3.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.dc2f3119967cb3f5cf792567d6cb02f7.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.d2a32a94bb1aca2f9d039fd10ceadcc9.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.d7066a031e8352bc770d1d07443fdc4d.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
@@ -38,9 +38,9 @@
 </div>
 </header>
 <article>
-<h1>Flux</h1>
+<h1>Basic Data Analysis in Python</h1>
 <p class=meta>
-Last updated May 24, 2022
+Last updated May 27, 2022
 </p>
 <ul class=tags>
 </ul>
@@ -50,59 +50,53 @@ Last updated May 24, 2022
 <ol>
 <li>
 <ol>
-<li><a href=#flux>Flux</a></li>
+<li><a href=#basic-data-analysis-in-python>Basic Data Analysis in Python</a></li>
 </ol>
 </li>
 </ol>
 </nav>
 </aside>
-<h3 id=flux>Flux</h3>
-<p>Flux is the measurement of flow, and is calculated using the <a href=/quartz/notes/surface-integrals rel=noopener class=internal-link data-src=/quartz/notes/surface-integrals>integral</a>:
-$$
-\iint F\cdot \mathrm{d}S
-$$
-When dealing with a flow field of the form $F(x,y,z)=Pi+Qj+Rk$, in some region $z=g(x,y)$, this integral can be rewritten as:
-$$
-\iint\left( -P\frac{\partial g}{\partial x} - Q\frac{\partial g}{\partial y} + R \right) \mathrm{d}A
-$$
-where $\mathrm{d}A$ changes depending on the coordinate system used.</p>
-<h5 id=example>Example</h5>
-<p>$F(x,y,z)=yi+xj+zk$ represents a flow field. Determine the flux $F$ in the region $E$ between the paraboloid $z=1-x^2-y^2$ and the plane $z=0$.</p>
-<p>Given the formulae above, we only need to substitute values.
-$$
-\begin{align}
-z=g(x,y)&=1-x^2-y^2 \\\\frac{\partial g}{\partial x}=-2x &\qquad
-\frac{\partial g}{\partial y}=-2y
-\end{align}
-$$
-The values of $P$, $Q$, and $R$ are given to us by the flow field:
-$$
-\begin{align}
-P&=y \\Q&=x \\R&=z
-\end{align}
-$$
-Plugging in these values to the integral gives us:
-$$
-\iint \left( 2xy + 2xy +z \right) \mathrm{d}A
-$$
-We can substitute the value of $z$ with our parameterized function:
-$$
-\iint \left( 2xy + 2xy +1-x^2-y^2 \right) \mathrm{d}A
-$$
-In order to evaluate the integral, we must convert to <a href=/quartz/notes/polar-coordinates rel=noopener class=internal-link data-src=/quartz/notes/polar-coordinates>polar coordinates</a>.
-$$
-\int_{0}^{2\pi} \int_{0}^{1} \left[ 4\left[ r\cos\theta \right]\left[ r\sin\theta \right] + 1-r^2 \right] r\mathrm{d}r\mathrm{d}\theta
-$$
-The limits are determined by finding the range of the radius $r$, and the angle that it forms around our shape, $2\pi$.</p>
-<p>Evaluating the integral with respect to $r$ first gives us:
-$$
-\int_{0}^{2\pi} \sin\theta \cos\theta \mathrm{d}\theta +\frac{1}{4}\int_{0}^{2\pi} \mathrm{d}\theta
-$$
-Solving the integral:
-$$
-\left. \frac{\left( \sin\theta \right)^2 }{2} + \frac{1}{4}\theta \right|_{0}^{2\pi}=
-\frac{\pi}{2}
-$$</p>
+<h3 id=basic-data-analysis-in-python>Basic Data Analysis in Python</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>import pandas as pd
+import numpy as np
+</code></pre></td></tr></table>
+</div>
+</div><p>The two most important libraries in data analysis are Pandas and NumPy. Pandas allows us to read and manipulate different datasets, while NumPy lets us perform specific operations with these.</p>
+<p>These libraries are imported using aliases, this is best practice.</p>
+<h4 id=pandas>Pandas</h4>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>df = pd.read(&#34;file&#34;)
+</code></pre></td></tr></table>
+</div>
+</div><p>Here we read from a specific file and save it as a dataframe. <code>df</code> is used by convention.</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>df.head()
+</code></pre></td></tr></table>
+</div>
+</div><p><code>head()</code> is used to show the first few rows and columns of the dataframe.</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>df.corr()
+</code></pre></td></tr></table>
+</div>
+</div><p><code>corr()</code> prints a table that shows us the relationship between the different regressors. It&rsquo;s important that each one of these independent variables are con related between each other.</p>
 </article>
 <hr>
 <div class=page-end>
@@ -110,7 +104,7 @@ $$</p>
 <h3>Backlinks</h3>
 <ul class=backlinks>
 <li>
-<a href=/quartz/divergence>Divergence</a>
+No backlinks found
 </li>
 </ul>
 </div>
@@ -120,7 +114,7 @@ $$</p>
 <div id=graph-container></div>
 <style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
 <script src=https://msninmx.github.io/quartz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
-<script>drawGraph("https://msninmx.github.io/quartz/flux","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+<script>drawGraph("https://msninmx.github.io/quartz/notes/data-analysis-basics-python","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
 </div>
 </div>
 <div id=contact_buttons>

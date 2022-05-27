@@ -1,8 +1,8 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Divergence The divergence of a vector field gives us information about the [[flux]], and is calculated with: $$ divF=\nabla\cdot F=\frac{\partial F_{x}}{\partial x}\frac{\partial F_{y}}{\partial y}\frac{\partial F_{z}}{\partial z} $$">
-<title>Divergence</title>
+<meta name=description content="Polynomial Regression Like [[notes/linear-regression|linear regressions]], polynomial regressions are ways to predict values of some dataset. These are used when a linear approximation isn&rsquo;t good enough to fit the values.">
+<title>Polynomial Regression</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://msninmx.github.io/quartz//icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
@@ -11,7 +11,7 @@
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
-<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.90e6929b860866cf848aba924dedd6f3.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.dc2f3119967cb3f5cf792567d6cb02f7.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.d2a32a94bb1aca2f9d039fd10ceadcc9.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.d7066a031e8352bc770d1d07443fdc4d.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
@@ -38,9 +38,9 @@
 </div>
 </header>
 <article>
-<h1>Divergence</h1>
+<h1>Polynomial Regression</h1>
 <p class=meta>
-Last updated May 24, 2022
+Last updated May 27, 2022
 </p>
 <ul class=tags>
 </ul>
@@ -50,34 +50,18 @@ Last updated May 24, 2022
 <ol>
 <li>
 <ol>
-<li><a href=#divergence>Divergence</a></li>
+<li><a href=#polynomial-regression>Polynomial Regression</a></li>
 </ol>
 </li>
 </ol>
 </nav>
 </aside>
-<h3 id=divergence>Divergence</h3>
-<p>The divergence of a vector field gives us information about the <a href=/quartz/flux rel=noopener class=internal-link data-src=/quartz/flux>flux</a>, and is calculated with:
+<h3 id=polynomial-regression>Polynomial Regression</h3>
+<p>Like <a href=/quartz/notes/linear-regression rel=noopener class=internal-link data-src=/quartz/notes/linear-regression>linear regressions</a>, polynomial regressions are ways to predict values of some dataset. These are used when a linear approximation isn&rsquo;t good enough to fit the values.</p>
+<p>Polynomial regressions have the form:
 $$
-divF=\nabla\cdot F=\frac{\partial F_{x}}{\partial x}\frac{\partial F_{y}}{\partial y}\frac{\partial F_{z}}{\partial z}
+y=\beta_0+\beta_1x+\beta_2x^2+\dots+\beta_kx^k
 $$</p>
-<h4 id=divergence-theorem>Divergence Theorem</h4>
-<p>Let $D$ be a region enclosed by a smooth surface $S$ pointing upwards, and let $F$ be a vector field.</p>
-<p>If the first partial derivatives are continuous over the space that contains S, then:
-$$
-\oint_C(F\cdot n)\mathrm{d}S=\iiint_{D}(divF)\mathrm{d}V
-$$</p>
-<h5 id=example>Example</h5>
-<p>Let $D$ be the region enclosed by the cube defined over $0\le x \le 1$, $0\le y \le 1$,$0\le z \le 1$. Prove the divergence theorem over $F=xyi+y^2j+z^4k$.</p>
-<p>First, we find the divergence of the flow field, by finding the partial derivatives of $F$:
-$$
-divF=y+2yz+3z^2
-$$
-So now we can establish our integral. The limits are given to us in the problem; the boundaries of the cube.
-$$
-\int_{0}^{1} \int_{0}^{1} \int_{0}^{1} \left[ y+2yz+3z^2 \right] \mathrm{d}x\mathrm{d}y\mathrm{d}z
-$$
-Solving the integral gives us an answer of $2$.</p>
 </article>
 <hr>
 <div class=page-end>
@@ -95,7 +79,7 @@ No backlinks found
 <div id=graph-container></div>
 <style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
 <script src=https://msninmx.github.io/quartz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
-<script>drawGraph("https://msninmx.github.io/quartz/divergence","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+<script>drawGraph("https://msninmx.github.io/quartz/notes/polynomial-regression","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
 </div>
 </div>
 <div id=contact_buttons>
