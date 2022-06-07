@@ -27,3 +27,9 @@ $$
 Explain Newton's 2nd Law
 Explain why the force is LIB
 Power = Work/time?
+
+$$
+\begin{align}
+
+\end{align}
+$$
