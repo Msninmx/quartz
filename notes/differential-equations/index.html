@@ -1,7 +1,7 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Differential Equations A differential equation is any equations that contains the derivative of one or more unknown functions. $$ a_n(x)\frac{\mathrm{d}^ny}{\mathrm{d}x^{n}}+a_{n-1}(x)\frac{\mathrm{d}^{n-1}y}{\mathrm{d}x^{n-1}}+\dots=y $$">
+<meta name=description content="Differential Equations A differential equation is any equations that contains the derivative of one or more unknown functions. $$ a_n(x)\frac{\mathrm{d}^ny}{\mathrm{d}x^{n}}+a_{n-1}(x)\frac{\mathrm{d}^{n-1}y}{\mathrm{d}x^{n-1}}+\dots=y=g(x) $$">
 <title>Differential Equations</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://msninmx.github.io/quartz//icon.png>
@@ -11,7 +11,7 @@
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
-<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.d2a32a94bb1aca2f9d039fd10ceadcc9.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.d7066a031e8352bc770d1d07443fdc4d.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.d2a32a94bb1aca2f9d039fd10ceadcc9.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.5f7c8eade7a4c070f804054c16f81e48.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
@@ -40,7 +40,7 @@
 <article>
 <h1>Differential Equations</h1>
 <p class=meta>
-Last updated May 27, 2022
+Last updated June 7, 2022
 </p>
 <ul class=tags>
 </ul>
@@ -53,7 +53,7 @@ Last updated May 27, 2022
 <li><a href=#differential-equations>Differential Equations</a></li>
 <li><a href=#algebraic-solution>Algebraic Solution</a></li>
 <li><a href=#steps-for-solving>Steps for solving</a></li>
-<li><a href=#higher-order-differential-equations>Higher Order Differential Equation{s</a></li>
+<li><a href=#second-order-differential-equations>Second Order Differential Equation{s</a></li>
 </ol>
 </li>
 </ol>
@@ -62,7 +62,7 @@ Last updated May 27, 2022
 <h3 id=differential-equations>Differential Equations</h3>
 <p>A differential equation is any equations that contains the derivative of one or more unknown functions.
 $$
-a_n(x)\frac{\mathrm{d}^ny}{\mathrm{d}x^{n}}+a_{n-1}(x)\frac{\mathrm{d}^{n-1}y}{\mathrm{d}x^{n-1}}+\dots=y
+a_n(x)\frac{\mathrm{d}^ny}{\mathrm{d}x^{n}}+a_{n-1}(x)\frac{\mathrm{d}^{n-1}y}{\mathrm{d}x^{n-1}}+\dots=y=g(x)
 $$</p>
 <p>Normally we work with functions, either graphing them or solving them. However, sometimes we don&rsquo;t have access to this function, only the derivative of the function. Solving a differential equation consists of finding this original equation.</p>
 <h3 id=algebraic-solution>Algebraic Solution</h3>
@@ -85,7 +85,7 @@ $$</p>
 $$
 2[me^{mx}]+5[e^{mx}]=0
 $$</p>
-<h3 id=higher-order-differential-equations>Higher Order Differential Equation{s</h3>
+<h3 id=second-order-differential-equations>Second Order Differential Equation{s</h3>
 <p>The equation can be rewritten as
 $$
 ay''+by'+cy=am^2e^{mx}+bme^{mx}+ce^{mx}=0
@@ -96,9 +96,15 @@ $$
 m_1=\frac{-b+\sqrt{b^2-4ac}}{2a} &&
 m_2=\frac{-b-\sqrt{b^2-4ac}}{2a}
 \end{align}
+$$
+Depending on the value of the discriminant $(b^2-4ac)$, the solution will take on different forms:
+$$
+\begin{align}
+1.\quad b^2-4ac>0,&\qquad y=c_1e^{m_1x}+c_2e^{m_2x} \\2.\quad b^2-4ac=0,&\qquad y=c_1e^{mx}+c_2xe^{mx} \\3.\quad b^2-4ac&lt;0,&\qquad y=e^{\alpha x}\left[c_1\cos\beta x+c_2\sin\beta x\right],\quad\text{where}\quad m=\alpha\pm\beta i
+\end{align}
 $$</p>
-<h4 id=example-1>Example</h4>
-<p>Solve the differential equation $2y''-5y-3=0$.</p>
+<h5 id=example-1>Example</h5>
+<p>Solve the differential equation $2y''-5y'-3y=0$.</p>
 <p>We rewrite this using its general solution. Note that it&rsquo;s not necessary to write $e^{mx}$, since this term can never be equal to $0$.
 $$
 2m^2-5m-3=0
@@ -115,7 +121,7 @@ $$
 y=c_1e^{3x}+c_2e^{-1/2}
 $$
 Note that this is only a general equation, since we haven&rsquo;t found the coefficients $c_1$ and $c_2$.</p>
-<h4 id=example-2>Example</h4>
+<h5 id=example-2>Example</h5>
 <p>Solve the differential equation $y''-10y'+25y=0$</p>
 <p>The characteristic equation becomes
 $$
@@ -134,6 +140,49 @@ $$
 y=c_1e^{5x}+c_2e^{5x}
 $$
 $e^{5x}$ should not be factorized out, since each of these terms represents a different physical phenomena.</p>
+<h4 id=types-of-solution>Types of Solution</h4>
+<p>The solution of a DE is composed by:</p>
+<ul>
+<li>A complementary solution, $y_c$
+<ul>
+<li>Its always multiplied by $c$, and is usually transient.</li>
+</ul>
+</li>
+<li>A particular solution, $y_p$
+<ul>
+<li>Is not multiplied by $c$, and is found by solving the non-homogeneous equation (when the equation is equal to $0$).</li>
+</ul>
+</li>
+</ul>
+<p>In other words, the complementary solution is a vague solution to the DE, in these examples all the solutions we have found have had complementary solutions since the right hand side of the equations has been equal to $0$. When this part is not equal to $0$, we are looking for a particular solution, where the coefficients are defined.</p>
+<h5 id=example-3>Example</h5>
+<p>Find the solution, $y$, for the DE:
+$$
+y''+4y'+7y=2
+$$
+First, we&rsquo;ll solve the homogeneous equation, e.i, the left hand part equalized to $0$.
+$$
+y''+4y'+7y=0
+$$
+Solving this using the characteristic equation we get:
+$$
+m^2+4m+7=0, \quad m=-2\pm\sqrt{3}i
+$$
+Since our value for $m$ is a complex number, we have a specific form for our solution.
+$$
+\begin{align}
+\alpha = -2 &\qquad \beta=\sqrt{3}\\\y_c=&e^{-2x}\left[c_1\cos\sqrt{3}x+c_2\sin\sqrt{3}x\right]
+\end{align}
+$$
+This is our complementary solution. The method we will use to find the particular solution is called the Undetermined Coefficients Method. We will assume that $y_p$ looks similar to what we have to the right of the equal sign. In this example, $y_p$ should be a constant, since what&rsquo;s on the right hand side of the equation $2$, is also constant. With this assumed value of $y_p$ we can find assumed values for $y_p'$ and $y_p''$
+$$
+y_p=A\quad y_p'=0\quad y_p''=0
+$$
+With these values for $y$, we can substitute these into our original DE to find the value of $A$, which will be $2/7$, which also becomes the value of our particular solution.</p>
+<p>We can now find the general solution to the DE, defined as $y=y_c+y_p$
+$$
+y=e^{-2x}\left[c_1\cos\sqrt{3}x+c_2\sin\sqrt{3}x\right]+\frac{2}{7}
+$$</p>
 </article>
 <hr>
 <div class=page-end>
