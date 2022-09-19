@@ -1,9 +1,8 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content="Differential equations that model:
- $F(x)=LIB$  $F(x)$ is a function of force based on distance across the board $L$ is the distance between the wires $I$ is the current $B$ is the magnetic force   $v(t)=v_0+at$  $v(t)$ is a function of velocity based on time $v_0$ is the current velocity at that position $a$ is the acceleration $t$ is the time   $v(x)=v_0+a\sqrt{\frac{2x}{a}}$  $v(x)$ is a function for velocity based on position, using the same variables as the previous function.">
-<title>Digital Brain</title>
+<meta name=description content="Vector Spaces A vector space is any space with elements, called vectors. $$ \textbf{A}=\hat{x}A_x+\hat{y}A_y+\hat{z}A_z $$ Where each component of the base is a unit.">
+<title>Vector Spaces</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://msninmx.github.io/quartz//icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
@@ -12,7 +11,7 @@
 <script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
-<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.d2a32a94bb1aca2f9d039fd10ceadcc9.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.5f7c8eade7a4c070f804054c16f81e48.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+<script>const BASE_URL="https://msninmx.github.io/quartz/",fetchData=Promise.all([fetch("https://msninmx.github.io/quartz/indices/linkIndex.d2a32a94bb1aca2f9d039fd10ceadcc9.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://msninmx.github.io/quartz/indices/contentIndex.3901be17fd5be75f5f254c24bc8031ac.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
 </head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
@@ -39,8 +38,9 @@
 </div>
 </header>
 <article>
+<h1>Vector Spaces</h1>
 <p class=meta>
-Last updated Unknown
+Last updated September 19, 2022
 </p>
 <ul class=tags>
 </ul>
@@ -50,53 +50,25 @@ Last updated Unknown
 <ol>
 <li>
 <ol>
-<li></li>
+<li><a href=#vector-spaces>Vector Spaces</a></li>
 </ol>
 </li>
 </ol>
 </nav>
 </aside>
-<p>Differential equations that model:</p>
-<ul>
-<li>$F(x)=LIB$
-<ul>
-<li>$F(x)$ is a function of force based on distance across the board</li>
-<li>$L$ is the distance between the wires</li>
-<li>$I$ is the current</li>
-<li>$B$ is the magnetic force</li>
-</ul>
-</li>
-<li>$v(t)=v_0+at$
-<ul>
-<li>$v(t)$ is a function of velocity based on time</li>
-<li>$v_0$ is the current velocity at that position</li>
-<li>$a$ is the acceleration</li>
-<li>$t$ is the time</li>
-</ul>
-</li>
-<li>$v(x)=v_0+a\sqrt{\frac{2x}{a}}$
-<ul>
-<li>$v(x)$ is a function for velocity based on position, using the same variables as the previous function.</li>
-</ul>
-</li>
-</ul>
-<p>$a$ can be represented as $\frac{LIB}{m}$, where $m$ is the mass of the rod.</p>
-<p>Velocity versus time:
+<h3 id=vector-spaces>Vector Spaces</h3>
+<p>A vector space is any space with elements, called vectors.
 $$
-\frac{dv}{dt}=\frac{LIB}{m}t
+\textbf{A}=\hat{x}A_x+\hat{y}A_y+\hat{z}A_z
 $$
-Position relative to time:
-$$
-\frac{dx}{dt}=\sqrt{2\cdot \frac{LIB}{m}x}
-$$</p>
-<h4 id=steps>Steps:</h4>
-<p>Explain Newton&rsquo;s 2nd Law
-Explain why the force is LIB
-Power = Work/time?</p>
-<p>$$
-\begin{align}</p>
-<p>\end{align}
-$$</p>
+Where each component of the base is a unit.</p>
+<p>A group of vectors $B$ of a vector space $V$ is is called a base of $V$ if and only if:</p>
+<ul>
+<li>$B$ is linearly independent</li>
+<li>$B$ generates $V$</li>
+</ul>
+<p>For a group of vectors to be linearly dependent, there can exist no possible way to add these vectors to get zero.</p>
+<p>Let $V$ be a set over which we define two operations, called summation and scalar multiplication. If elements $\textbf{u}$ and $\textbf{v}$ are in $V$, the sum of $\textbf{u}$ and $\textbf{v}$ is denoted $\textbf{u}\textbf{v}$, and if $c$ is some scalar, the scalar multiple of $\textbf{u}$ by $c$ is denoted by $c\textbf{u}$.</p>
 </article>
 <hr>
 <div class=page-end>
@@ -114,7 +86,7 @@ No backlinks found
 <div id=graph-container></div>
 <style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
 <script src=https://msninmx.github.io/quartz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
-<script>drawGraph("https://msninmx.github.io/quartz/situacionProblema","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+<script>drawGraph("https://msninmx.github.io/quartz/notes/vector-space","https://msninmx.github.io/quartz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
 </div>
 </div>
 <div id=contact_buttons>
